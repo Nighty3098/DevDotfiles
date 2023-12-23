@@ -19,11 +19,11 @@
 	<h1 align="center">Terminal configuration</h1>
 	<img src="https://github.com/Nighty3098/DevDotfiles/blob/main/images/kitty.png?raw=true" />
 	<img src="https://github.com/Nighty3098/DevDotfiles/blob/main/images/nvim.png?raw=true" />
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/zshrc">ZSH configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/p10k.zsh">POWERLEVEL10k configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/tmux.conf">TMUX configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/config/neofetch/config.conf">Neofetch configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/N1ght3098/DevDotfiles/tree/main/config/nvim">NeoVim configuration</a></h3>
+	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.zshrc">ZSH configuration</a></h3>
+	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.p10k.zsh">POWERLEVEL10k configuration</a></h3>
+	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">TMUX configuration</a></h3>
+	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/neofetch/config.conf">Neofetch configuration</a></h3>
+	<h3 align="center"><a href="https://github.com/N1ght3098/DevDotfiles/tree/main/.config/nvim">NeoVim configuration</a></h3>
 </div>
 
 <div class="tmux_config" align="center">
