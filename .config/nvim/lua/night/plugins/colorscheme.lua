@@ -22,13 +22,25 @@ return {
     "rebelot/kanagawa.nvim",
   },
   {
+    "ellisonleao/gruvbox.nvim",
+  },
+  {
+    "bluz71/vim-moonfly-colors",
+  },
+  {
+    "rmehri01/onenord.nvim",
+  },
+  {
+    "Shatur/neovim-ayu",
+  },
+  {
     "craftzdog/solarized-osaka.nvim",
     priority = 1000,
     config = function()
       -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme nightfly")
-vim.g.theme_id = 1
+vim.cmd("colorscheme solarized-osaka")
+vim.g.theme_id = 12
 -- end themery block
     end,
   },

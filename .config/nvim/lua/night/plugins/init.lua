@@ -7,7 +7,5 @@ return {
 
   "voldikss/vim-floaterm",
 
-  "cdelledonne/vim-cmake",
-
   "karb94/neoscroll.nvim",
 }

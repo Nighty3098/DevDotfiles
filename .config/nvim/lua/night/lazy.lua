@@ -20,6 +20,14 @@ require("lazy").setup({ { import = "night.plugins" }, { import = "night.plugins.
     notify = false,
   },
   change_detection = {
-    notify = false,
+    notify = true,
+  },
+
+  ui = {
+    border = "double",
+    size = {
+      width = 0.8,
+      height = 0.8,
+    },
   },
 })
