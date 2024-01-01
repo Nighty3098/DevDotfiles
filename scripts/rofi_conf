@@ -1,0 +1,21 @@
+#!/bin/bash
+
+chosen=$(printf "i3\ni3 status\npolybar\nranger\nkitty\ndunst\nhtop\nnano\nzsh\npicom\nneovim" | rofi -dmenu)
+
+case "$chosen" in
+	"i3")kitty -e nvim ~/.config/i3/config;;
+	"i3 status")kitty -e nvim ~/.config/i3status/i3status.conf;;
+	"polybar")kitty -e nvim ~/.config/polybar/config;;
+	"ranger")kitty -e nvim ~/.config/ranger/rc.conf;;
+	"kitty")kitty -e nvim ~/.config/kitty/kitty.conf;;
+	"dunst")kitty -e nvim ~/.config/dunst/dunstrc;;
+	"htop")kitty -e nvim ~/.config/htop/htoprc;;
+	"nano")kitty -e nvim ~/.nanorc;;
+	"zsh")kitty -e nvim ~/.zshrc;;
+	"picom")kitty -e nvim ~/.config/picom/picom.conf;;
+	"neovim")kitty -e nvim ~/.config/nvim/;;
+        *) exit 1 ;;
+esac
+
+
+
