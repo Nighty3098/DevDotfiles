@@ -15,6 +15,11 @@
     <img src="https://img.shields.io/badge/TMUX-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </div>
 
+<div class="i3wm" align="center">
+    <h1 align="center">i3wm configuration</h1>
+    <img src="images/i3.png"
+</div>
+
 <div class="term_config" align="center">
 	<h1 align="center">Terminal configuration</h1>
 	<img src="https://github.com/Nighty3098/DevDotfiles/blob/main/images/kitty.png?raw=true" />
