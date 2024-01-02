@@ -21,7 +21,7 @@ font Awesome Brands 8
 # Автозапуск приложенй
 exec --no-startup-id dex --autostart --environment i3
 #exec --no-startup-id /home/night/scripts/picom/build/src/picom -b --refresh-rate 156 --vsync --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-for-transient-window fly-in  --animation-stiffnes 500 --corner-radius 5 --vsync
-exec --no-startup-id /home/night/scripts/picom/build/src/picom -b --refresh-rate 144  --corner-radius 15
+exec --no-startup-id /home/night/scripts/picom/build/src/picom -b --refresh-rate 144 --vsync  --corner-radius 15 -o 0 
 exec --no-startup-id pulseaudio
 exec --no-startup-id cpupower frequency-set -g performance
 #exec --no-startup-id nitrogen --restore
