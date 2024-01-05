@@ -1,40 +1,44 @@
 return {
-  "stevearc/conform.nvim",
-  lazy = true,
-  event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
-  config = function()
-    local conform = require("conform")
-
-    conform.setup({
-      formatters_by_ft = {
-        cpp = { "clang-format" },
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        javascriptreact = { "prettier" },
-        typescriptreact = { "prettier" },
-        svelte = { "prettier" },
-        css = { "prettier" },
-        html = { "prettier" },
-        json = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        graphql = { "prettier" },
-        lua = { "stylua" },
-        python = { "isort", "black" },
-      },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      },
-    })
-
-    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-      conform.format({
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      })
-    end, { desc = "Format file or range (in visual mode)" })
-  end,
+    "stevearc/conform.nvim",
+    config = function()
+        require("conform").setup({
+            logging = false,
+            preferences = {
+                disable = false,
+                -- configuration
+            },
+            source = {
+                path = ".",
+                max_lines = 1000,
+                max_indent_level = 4,
+                -- file types to exclude from formatting
+                exclude_file_types = {
+                    "TelescopePrompt",
+                    "packer",
+                    "Conform",
+                },
+                -- function to execute after formatting, with filename as argument
+                post_format_hook = function(file) end,
+            },
+            config = {
+                indent = {
+                    width = 4,
+                    -- tabs are used instead of spaces if true, otherwise spaces are used
+                    use_tabs = true,
+                    tab_width = 4,
+                },
+                end_of_line = {
+                    eol = "lf", -- or 'crlf'
+                    fix_by_file_format = true,
+                },
+                charset = {
+                    encode = "utf-8",
+                    fix_by_file_format = true,
+                },
+                trim_whitespace = true,
+                insert_final_newline = true,
+            },
+        })
+    end
 }
+

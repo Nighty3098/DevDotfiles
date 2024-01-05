@@ -4,6 +4,8 @@ return {
     -- Minimal config
     require("themery").setup({
       themes = {
+        "snazzy",
+        "palenight",
         "nightfly",
         "tokyonight-night",
         "tokyonight-storm",

@@ -9,6 +9,7 @@ return {
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+    "onsails/lspkind.nvim",
   },
 
   config = function()
@@ -16,6 +17,15 @@ return {
     local cmp = require("cmp")
 
     cmp.setup({
+      formatting = {
+                format = require('lspkind').cmp_format({
+                mode = "symbol",
+                maxwidth = 50,
+                ellipsis_char = '...',
+                symbol_map = { Codeium = "", }
+                }),
+            },
+
       snippet = {
         -- REQUIRED - you must specify a snippet engine
         expand = function(args)
@@ -38,6 +48,7 @@ return {
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
+        { name = "codeium" },
         { name = "vsnip" }, -- For vsnip users.
         -- { name = 'luasnip' }, -- For luasnip users.
         -- { name = 'ultisnips' }, -- For ultisnips users.
