@@ -14,39 +14,45 @@
 	<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
     <img src="https://img.shields.io/badge/TMUX-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </div>
-
+<br>
 <div class="i3wm" align="center">
     <h1 align="center">i3wm configuration</h1>
-    <img src="images/i3.png"
+    <img src="images/i3.png" />
+    <h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/i3/config">i3wm configuration</a></h3>
+    <h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/polybar/config">polybar configuration</a></h3>
+    <h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/rofi/config.rasi">rofi configuration</a></h3>
 </div>
-
-<div class="term_config" align="center">
+<br>
+<div class="term_config" align="center">         
 	<h1 align="center">Terminal configuration</h1>
-	<img src="https://github.com/Nighty3098/DevDotfiles/blob/main/images/kitty.png?raw=true" />
-	<img src="https://github.com/Nighty3098/DevDotfiles/blob/main/images/nvim.png?raw=true" />
+	<img src="./images/nf.png" />
 	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.zshrc">ZSH configuration</a></h3>
 	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.p10k.zsh">POWERLEVEL10k configuration</a></h3>
 	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">TMUX configuration</a></h3>
 	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/neofetch/config.conf">Neofetch configuration</a></h3>
 	<h3 align="center"><a href="https://github.com/N1ght3098/DevDotfiles/tree/main/.config/nvim">NeoVim configuration</a></h3>
 </div>
-
+<br>
 <div class="tmux_config" align="center">
     <h1 align="center">TMUX configuration</h1>
+    <img src="./images/tmux.png" />
+    <h3 align="center">tmux plugins:</h3>
     <li><a href="https://github.com/tmux-plugins/tpm">tmux-plugins/tpm</a></li>
+    <li><a href="https://github.com/tmux-plugins/tmux-yank">tmux-plugins/tmux-yank</a></li>
     <li><a href="https://github.com/tmux-plugins/tmux-sensible">tmux-plugins/tmux-sensible</a></li>
     <li><a href="https://github.com/tmux-plugins/tmux-resurrect">tmux-plugins/tmux-resurrect</a></li>
     <li><a href="https://github.com/tmux-plugins/tmux-sessionist">tmux-plugins/tmux-sessionist</a></li>
     <li><a href="https://github.com/tmux-plugins/tmux-continuum">tmux-plugins/tmux-continuum</a></li>
-    <li><a href="https://github.com/tmux-plugins/tmux-sensible">tmux-plugins/tmux-sensible</a></li>
     <li><a href="https://github.com/tmux-plugins/tmux-logging">tmux-plugins/tmux-logging</a></li>
-    <li><a href="https://github.com/catppuccin/tmux">catppuccin/tmux</a></li>
-    <li><a href="https://github.com/sainnhe/tmux-plugin-sysstat">sainnhe/tmux-plugin-sysstat</a></li>
     <li><a href="https://github.com/sainnhe/tmux-net-speed">sainnhe/tmux-net-speed</a></li>
+    <li><a href="https://github.com/sainnhe/tmux-plugin-sysstat">sainnhe/tmux-plugin-sysstat</a></li>
+    <li><a href="https://github.com/ofirgall/tmux-window-name">ofirgall/tmux-window-name</a></li>
+    <li><a href="https://github.com/2kabhishek/tmux2k">2kabhishek/tmux2k</a></li>
 </div>
-
+<br>
 <div class="nvim_config" align="center">
 	<h1 align="center">NeoVim configuration</h1>
+    <img src="./images/nvim.png" />
 	<h3 align="center">nvim plugins:</h3>
         <li><a href="https://github.com/zaldih/themery.nvim">zaldih/themery.nvim</a></li>
 		<li><a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a></li>
@@ -70,4 +76,10 @@
 		<li><a href="https://github.com/nvim-telescope/telescope.nvim">nvim-telescope/telescope.nvim</a></li>
 		<li><a href="https://github.com/folke/lazy.nvim">folke/lazy.nvim</a></li>
         <li><a href="https://github.com/echasnovski/mini.animate">echasnovski/mini.animate</a></li>
+        <li><a href="https://github.com/Exafunction/codeium.nvim">Exafunction/codeium.nvim</a></li>
+        <li><a href="https://github.com/rhysd/vim-clang-format">rhysd/vim-clang-format</a></li>
+        <li><a href="https://github.com/folke/noice.nvim">folke/noice.nvim</a></li>
+        <li><a href="https://github.com/folke/neodev.nvim">folke/neodev.nvim</a></li>
+        <li><a href="https://github.com/rcarriga/nvim-notify">rcarriga/nvim-notify</a></li>
+        <li><a href="https://github.com/MunifTanjim/prettier.nvim">MunifTanjim/prettier.nvim</a></li>
 </div>
