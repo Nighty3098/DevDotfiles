@@ -37,23 +37,23 @@ return {
           },
           glyphs = {
             folder = {
-              default = "",
-              empty = "",
+              default = "",
+              empty = "",
               empty_open = "",
-              open = "",
+              open = "",
               symlink = "",
               symlink_open = "",
               arrow_open = "",
               arrow_closed = "",
             },
             git = {
-              unstaged = "",
-              staged = "",
+              unstaged = "✗",
+              staged = "✓",
               unmerged = "",
-              renamed = "",
-              deleted = "",
-              untracked = "",
-              ignored = "",
+              renamed = "➜",
+              deleted = "",
+              untracked = "★",
+              ignored = "◌",
             },
           },
         },
@@ -72,7 +72,7 @@ return {
         custom = { ".DS_Store" },
       },
       git = {
-        ignore = false,
+        ignore = true,
       },
     })
 

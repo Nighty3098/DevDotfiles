@@ -1,8 +1,0 @@
-return {
-    "rebelot/heirline.nvim",
-    config = function()
-
-
-
-    end 
-}

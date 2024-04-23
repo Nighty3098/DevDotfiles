@@ -46,6 +46,10 @@ keymap.set("n", "<A-8>", ":BufferGoto 8<CR>")
 keymap.set("n", "<A-9>", ":BufferGoto 9<CR>")
 keymap.set("n", "<A-0>", ":BufferGoto 0<CR>")
 
+-- float term 
+keymap.set("n", "<leader>ft", ":FloatermToggle<CR>")
+
+
 -- vim-maximizer
 keymap.set("n", "<leader>mt", ":MaximizerToggle<CR>") -- toggle split window maximization
 

@@ -8,4 +8,6 @@ return {
   "voldikss/vim-floaterm",
 
   "karb94/neoscroll.nvim",
+
+  "mg979/vim-visual-multi",
 }
