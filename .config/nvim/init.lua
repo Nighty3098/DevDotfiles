@@ -1,2 +1,2 @@
-require("night.core")
-require("night.lazy")
+require("nighty.core")
+require("nighty.lazy")
