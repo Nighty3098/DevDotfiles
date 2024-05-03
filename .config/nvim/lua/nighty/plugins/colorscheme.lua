@@ -1,6 +1,6 @@
 return {
   {
-        "drewtempelmeyer/palenight.vim"
+    "drewtempelmeyer/palenight.vim",
   },
 
   {
@@ -11,7 +11,7 @@ return {
       vim.g.nightflyCursorColor = true
       vim.g.nightflyNormalFloat = true
       vim.g.nightflyWinSeparator = 2
-      --      vim.cmd([[colorscheme nightfly]])
+      vim.cmd([[colorscheme nightfly]])
     end,
   },
   {
@@ -55,13 +55,11 @@ return {
     "craftzdog/solarized-osaka.nvim",
     priority = 1000,
     config = function()
-
--- Themery block
--- This block will be replaced by Themery.
-vim.cmd("colorscheme kanagawa-wave")
-vim.g.theme_id = 12
--- end themery block
-
+      -- Themery block
+      -- This block will be replaced by Themery.
+      -- vim.cmd("colorscheme solarized-osaka-night")
+      vim.g.theme_id = 12
+      -- end themery block
     end,
   },
 }
