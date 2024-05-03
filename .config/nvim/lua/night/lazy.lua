@@ -11,12 +11,23 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "nighty.plugins" }, { import = "nighty.plugins.lsp" } }, {
+require("lazy").setup({ { import = "night.plugins" }, { import = "night.plugins.lsp" } }, {
+  install = {
+    colorscheme = { "tokyonight-storm" },
+  },
   checker = {
     enabled = true,
     notify = false,
   },
   change_detection = {
-    notify = false,
+    notify = true,
+  },
+
+  ui = {
+    border = "double",
+    size = {
+      width = 0.8,
+      height = 0.8,
+    },
   },
 })
