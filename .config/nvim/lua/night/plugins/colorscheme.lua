@@ -58,8 +58,8 @@ return {
 
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme nightfly")
-vim.g.theme_id = 3
+vim.cmd("colorscheme tokyonight-night")
+vim.g.theme_id = 4
 -- end themery block
 
     end,

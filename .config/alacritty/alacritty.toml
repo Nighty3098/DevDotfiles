@@ -1,0 +1,26 @@
+import = ["~/.config/alacritty/themes/themes/nightfox.toml"]
+#import = ["~/.config/alacritty/themes/themes/coolnight.toml"]
+
+[env]
+TERM = "tmux-256color"
+
+[font]
+size = 12
+normal.family = "MesloLGLDZ Nerd Font"
+#normal.family = "JetBrainsMono Nerd Font"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+opacity = 0.90
+blur = true
+decorations = "none"
+
+[cursor]
+style = "Beam"
+
+[window.padding]
+x = 10
+y = 10
