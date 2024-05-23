@@ -1,17 +1,16 @@
 <h1 align="center">Dev Environment Files</h1>
 
 <div class=badges align="center">
-	<img src="https://img.shields.io/github/last-commit/Nighty3098/DevDotfiles?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=0d1117"/>
-	<img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=0d1117"/>
-	<img src="https://img.shields.io/endpoint?url=https://waka.mehalter.com/api/compat/shields/v1/mehalter/interval:any/label:N1ght3098&style=for-the-badge&label=wakatime&logo=wakatime&color=dd85e1&logoColor=FFFFFF&labelColor=0d1117"/>
-    <br>
-	<a href="https://discord.gg/#9707" target="blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
-	<a href="https://t.me/Night3098" target="blank"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/></a>
-	<a href="mailto:night3098game@gmail.com" target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-	<a href="https://www.reddit.com/user/Night3098" target="blank"><img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"/></a>
-    <br>
-	<img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=vim&logoColor=white"/>
-	<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+    <a href="./LICENSE.md"><img src="https://img.shields.io/github/license/Nighty3098/DevDotfiles?style=for-the-badge&color=a6e0b8&logoColor=85e185&labelColor=1c1c29" /></a>
+    <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
+    <img src="https://img.shields.io/github/issues-pr/Nighty3098/DevDotfiles?style=for-the-badge&color=ef9f9c&logoColor=85e185&labelColor=1c1c29" />
+    <img src="https://img.shields.io/github/last-commit/Nighty3098/DevDotfiles?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=1c1c29"/>
+    <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
+    <br><br>
+    <a href="https://discord.gg/6xEc5WFK"><img src="https://img.shields.io/discord/1238858182403559505.svg?label=Discord&logo=Discord&style=for-the-badge&color=f5a7a0&logoColor=FFFFFF&labelColor=1c1c29" /></a>
+    <br><br>
+	<img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=vim&logoColor=black&color=a6e0b8"/>
+	<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&color=eed49f" />
     <img src="https://img.shields.io/badge/TMUX-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </div>
 <br>
