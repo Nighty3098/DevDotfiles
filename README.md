@@ -7,11 +7,9 @@
     <img src="https://img.shields.io/github/last-commit/Nighty3098/DevDotfiles?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=1c1c29"/>
     <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
     <br><br>
-    <a href="https://discord.gg/KK4Xdcqb"><img src="https://img.shields.io/discord/1238858182403559505.svg?label=Discord&logo=Discord&style=for-the-badge&color=f5a7a0&logoColor=FFFFFF&labelColor=1c1c29" /></a>
+    <img src="https://invidget.switchblade.xyz/r8jWX8ugDd" style="border-radius: 15px;"/><br>
     <br><br>
-	<img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=vim&logoColor=black&color=a6e0b8"/>
-	<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&color=eed49f" />
-    <img src="https://img.shields.io/badge/TMUX-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+    <img class="badge" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&color=eed49f"  style="border-radius: 5px;"/>
 </div>
 <br>
 <div class="i3wm" align="center">
