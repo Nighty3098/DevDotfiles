@@ -20,16 +20,6 @@
     <h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/rofi/config.rasi">rofi configuration</a></h3>
 </div>
 <br>
-<div class="term_config" align="center">         
-	<h1 align="center">Terminal configuration</h1>
-	<img src="./images/nf.png" />
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.zshrc">ZSH configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.p10k.zsh">POWERLEVEL10k configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">TMUX configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/neofetch/config.conf">Neofetch configuration</a></h3>
-	<h3 align="center"><a href="https://github.com/N1ght3098/DevDotfiles/tree/main/.config/nvim">NeoVim configuration</a></h3>
-</div>
-<br>
 <div class="tmux_config" align="center">
     <h1 align="center">TMUX configuration</h1>
     <img src="./images/tmux.png" />
@@ -50,6 +40,7 @@
 <div class="nvim_config" align="center">
 	<h1 align="center">NeoVim configuration</h1>
     <img src="./images/nvim.png" />
+    <img src="./images/nvim_2.png" />
 	<h3 align="center">nvim plugins:</h3>
         <li><a href="https://github.com/zaldih/themery.nvim">zaldih/themery.nvim</a></li>
 		<li><a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a></li>
