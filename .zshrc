@@ -12,8 +12,6 @@ eval "$(starship init zsh)"
 
 
 plugins=(git
-         zsh-syntax-highlighting
-         zsh-autosuggestions
          github)
 
 source $ZSH/oh-my-zsh.sh
@@ -46,4 +44,3 @@ alias e="exit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
