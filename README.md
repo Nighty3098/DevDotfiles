@@ -20,7 +20,7 @@ DE: Gnome
 Term: kitty  
 CPU: 12th Gen Intel i7-12700KF
 GPU: NVIDIA GeForce RTX 4070 
-Ram: 31934MiB 
+Ram: 32GB 
 Monitor: 2560x1440 
 ```
 
