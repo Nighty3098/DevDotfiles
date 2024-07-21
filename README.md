@@ -27,8 +27,8 @@ Monitor: 2560x1440
 
 <div align="center">
     <h1 align="center">DE</h1>
-    <img src="images/gnome.png" width="45%"/>
-    <img src="images/gnome_2.png" width="45%"/>
+    <img src="images/gnome.png" width="70%"/>
+    <img src="images/gnome_2.png" width="70%"/>
     <br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/i3">i3 config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.themes/WhiteSur-custom-panel">gnome theme</a><br><br>
@@ -52,3 +52,28 @@ Monitor: 2560x1440
     <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">tmux config</a><br><br>
 </div>
 <br>
+
+
+<div align="center">
+    <h1 align="center">Gnome Extensions</h1>
+
+```
+    Blur My Shell
+    Clipboard indicator
+    Compiz alike magic lamp effect
+    Compiz windows effect
+    Forge
+    Hide items
+    Just perfection
+    Quick settings tweaker
+    Rounded window corners Reborn
+    TopHat
+    Space Bar
+    Undecorate Window
+    Window title is back
+    Arc menu
+    Dash to dock
+    User Themes
+```
+
+</div>
