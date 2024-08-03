@@ -56,6 +56,7 @@ Monitor: 2560x1440
 
 <div align="center">
     <h1 align="center">Gnome Extensions</h1>
+</div>
 
 ```
     Blur My Shell
@@ -75,5 +76,3 @@ Monitor: 2560x1440
     Dash to dock
     User Themes
 ```
-
-</div>
