@@ -1,7 +1,7 @@
 require("night.core")
 require("night.lazy")
 
-vim.cmd("colorscheme onenord")
+vim.cmd("colorscheme catppuccin-frappe")
 
 -- nightfly
 -- tokyonight-night, tokyonight-storm, tokyonight-day, tokyonight-moon, 
@@ -11,5 +11,4 @@ vim.cmd("colorscheme onenord")
 -- moonfly
 -- onenord, onenord-light
 -- ayu, ayu-dark, ayu-light, ayu-mirage
--- ghdark
 -- solarized-osaka, solarized-osaka-day, solarized-osaka-moon, solarized-osaka-storm, solarized-osaka-night
