@@ -26,16 +26,4 @@ cp -r rofi ~/.config/
 
 cp starship ~/.config/
 
-cd ..
-
-cp -r .themes/WhiteSur-custom-panel ~/.themes/
-
-mv ~/.zshrc ~/.zshrc_old
-mv ~/.tmux.conf ~/.tmux.conf_old
-mv ~/.p10k.zsh ~/.p10k.zsh_old
-
-cp .zshrc ~/
-cp .tmux.conf ~/
-cp .p10k.zsh ~/
-
 echo "Done!"
