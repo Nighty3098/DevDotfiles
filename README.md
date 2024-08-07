@@ -13,14 +13,6 @@
 </div>
 <br><br><br>
 
-<h1 align="center">Installing</h1>
-
-```bash
-git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules
-cd DevDotfiles
-bash install.sh
-```
-
 <div align="center">
     <details>
     <summary><h1 align="center">DE</h1></summary>
@@ -49,6 +41,7 @@ bash install.sh
     </details>
 </div>
 <br>
+
 
 <div>
     <details align="center">
