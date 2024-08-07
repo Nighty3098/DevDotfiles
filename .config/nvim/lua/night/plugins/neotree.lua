@@ -11,8 +11,8 @@ return {
 
         require("neo-tree").setup({
             source_selector = {
-                winbar = false,
-                statusline = false
+                winbar = true,
+                statusline = true
             },
             popup_border_style = "rounded",
             enable_git_status = false,

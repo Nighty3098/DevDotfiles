@@ -1,156 +1,188 @@
-#left_format = """$username$hostname$directory$git_branch$git_state$git_status$git_metrics$java$ruby$nodejs$lua$docker_context$python$rust$cmd_duration"""
-right_format = """$battery$time"""
+# Order of modules on prompt
+format = """
+ $all 
+"""
+right_format = """$time"""
+
+        # $time\
+        # $hostname\
+        # $directory\
+        # $aws\
+        # $gcloud\
+        # $singularity\
+        # $kubernetes\
+        # $docker_context\
+        # (↓ Source control - for right side ↓)\
+        # $hg_branch\
+        # $git_branch\
+        # $git_commit\
+        # $git_status\
+        # $git_state\
+        # (↑ Source control - for right side ↑)\
+        # (↓ Toolchain version modules ↓)\
+        # $crystal\
+        # $dart\
+        # $dotnet\
+        # $elixir\
+        # $elm\
+        # $erlang\
+        # $golang\
+        # $java\
+        # $lua\
+        # $julia\
+        # $nim\
+        # $nodejs\
+        # $ocaml\
+        # $perl\
+        # $php\
+        # $purescript\
+        # $python\
+        # $ruby\
+        # $rust\
+        # $swift\
+        # $terraform\
+        # $zig\
+        # (↑ Toolchain version modules ↑)\
+        # (↓ Package modules ↓)\
+        # $helm\
+        # $package\
+        # $cmake\
+        # $conda\
+        # (↑ Package modules ↑)\
+        # $nix_shell\
+        # $memory_usage\
+        # $env_var\
+        # $custom\
+        # (↑ above input line ↑)\
+        # $line_break\
+        # (↓ on input line ↓)\
+        # $battery\
+        # $shlvl\
+        # $jobs\
+        # $cmd_duration\
+        # $status\
+        # $character"""
+
+
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~     DIRECTORY     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+[directory]
+style= "fg:#62D6E8"
+truncation_length = 4
+truncate_to_repo = true
+fish_style_pwd_dir_length = 3
+
+[directory.substitutions]
+"Documents" = " 󰧮 "
+"Music" = "  "
+"Movies" = " 󰿏 "
+"Pictures" =  " "
+"Sources" = "  "
+"Downloads" = "  "
+"~/" = "  "
+"/" = "  "
+"Dev" = "  "
+".config" = "  "
+
+[line_break]
+disabled = true # leave as TRUE  
 
 [character]
-success_symbol = " [ ](#a9a1e1)"
-error_symbol = " [ ](#ff6c6b)"
-vicmd_symbol = "[ ](#98be65)"
-
-# Username
-[username]
-style_user = "dimmed blue"
-
-[hostname]
-ssh_only = false
-format = "<[$hostname]($style)>"
-trim_at = "-"
-style = "dimmed white"
-disabled = true
-
-[battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
-unknown_symbol = ""
+success_symbol = " [󰁔](fg:#7F5AF0) "
+error_symbol =   " [ ](fg:#EF2F70)[ ](fg:#EF2F70) "
+format = "$symbol"
 disabled = false
-format = "[ ](fg:#ff6c6b bg:none)[$symbol ](fg:#282c34 bg:#ff6c6b)[ ](fg:#ff6c6b bg:#ff7b7a)[$percentage]($style)[ ](fg:#ff7b7a bg:none)"
-[[battery.display]]
-style = "fg:#282c34 bg:#ff7b7a"
-threshold=100
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ...........       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
-# Last param in the first line/row
-[cmd_duration]
-min_time = 1
-format = "[ ](fg:#9088c8 bg:none)[ ](fg:#282c34 bg:#9088c8)[](fg:#9088c8 bg:#a9a1e1)[$duration]($style)[](fg:#a9a1e1 bg:none)"
-disabled = false
-style = "fg:#282c34 bg:#a9a1e1"
 
-# Third param
-[directory]
-format = "[](fg:#da8548 bg:none)[ ](fg:#282c34 bg:#da8548)[](fg:#da8548 bg:#ECBE7B)[ $path]($style)[](fg:#ECBE7B bg:none) "
-style = "fg:#282c34 bg:#ECBE7B"
-truncation_length = 3
-truncate_to_repo=false
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~ GIT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 [git_branch]
-format = "[](fg:#7fa54c bg:none)[](fg:#282c34 bg:#7fa54c)[](fg:#7fa54c bg:#98be65)[ $branch]($style)[](fg:#98be65 bg:none) "
-style = "fg:#282c34 bg:#98be65"
+disabled = false
+symbol = " "
+style = "fg:#b79999"
+truncation_length = 5   # length == ABCDE
+format = '[$symbol$branch(:$remote_branch)]($style) ' # this sets path ../../../../
 
 [git_commit]
-format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
-style = "green"
-
-[git_status]
-format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[ ](fg:#3896d6 bg:#51afef)[$modified](fg:#282c34 bg:#51afef)[$untracked](fg:#282c34 bg:#51afef)[$staged](fg:#282c34 bg:#51afef)[$renamed](fg:#282c34 bg:#51afef)[](fg:#51afef bg:none)"
-conflicted = "="
-ahead =	"⇡${count} "
-behind = "⇣${count} "
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?${count} "
-modified = "!${count} "
-staged = "+${count} "
-renamed = "»${count} "
-deleted = "✘${count} "
-style =	"red"
 disabled = false
+commit_hash_length = 1
 
 [git_state]
-rebase = "REBASING"
-merge =	"MERGING"
-revert = "REVERTING"
-cherry_pick = "CHERRY-PICKING"
-bisect = "BISECTING"
-am = "AM"
-am_or_rebase = "AM/REBASE"
-style =	"yellow"
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
 disabled = false
+rebase = "rebasing"
+merge = "merging"
+revert = "reverting"
+cherry_pick = " picking"
+bisect = "bisecting"
+am = "am'ing"
+am_or_rebase = "am/rebase"
 
-[hg_branch]
-symbol = ""
-style = "purple"
-format = "on [$symbol$branch]($style) "
-
-[time]
-style="fg:#282c34 bg:#51afef"
-format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[](fg:#3896d6 bg:#51afef)[ $time]($style)[](fg:#51afef bg:none)"
-time_format = "%R"
+[git_status]
 disabled = false
-
-[docker_context]
-disabled=true
-symbol = " "
-
-[c]
-disabled=true
-
-[conda]
-disabled=true
-symbol = " "
-
-[dart]
-disabled=true
-symbol = " "
-
-[package]
-disabled=true
-symbol = " "
-
-[perl]
-disabled=true
-symbol = " "
-
-[php]
-disabled=true
-symbol = " "
+style= "fg:#4AE1B4"
+stashed = " ${count} "
+ahead = "󰞙 ${count} "
+behind = "󰞒 ${count} "
+diverged = "󰵉 ${ahead_count} ${behind_count} "
+conflicted = " ${count} "
+deleted = " ${count} "
+renamed = " ${count} "
+modified = " ${count} "
+staged = " ${count} "
+untracked = "󱅘 ${count}"
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ...........       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
-[ruby]
-disabled=true
-symbol = " "
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~     LANGUAGES     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 [java]
-disabled=true
-symbol = " "
-
-[lua]
-disabled=true
-symbol = " "
-style = "bold blue"
-
-[nodejs]
-disabled=true
-
-[swift]
-disabled=true
-symbol = "ﯣ "
-
-[julia]
-disabled=true
-format = "[$symbol$version]($style) "
-symbol = "ஃ "
-style = "bold green"
+disabled = false
+symbol = "•  "
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
 
 [python]
-disabled=true
-format = 'via [${symbol}${pyenv_prefix}${version}( $virtualenv)]($style) '
-symbol = " "
-style = "italic Blue"
+disabled = false
+pyenv_version_name= false
+python_binary = 'python'
+format = '[${symbol}(\($virtualenv\))]($style)'
+style = "fg:#a48989"
+symbol = "• 󱔎 "
 
-[rust]
-disabled=true
-format = "[$symbol$version]($style) "
-# style = "bold green"
-symbol = " "
+[lua]
+disabled = false
+symbol = "• "
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
 
-# Prompt: optional param 1
+[nodejs]
+disabled = false
+symbol = "• 󰎙 "
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
+
+[package]
+disabled = false
+symbol = "•  "
+display_private = false
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
+
+[docker_context]
+disabled = false
+symbol = "•  "
+only_with_files = true
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
+
+[golang]
+disabled = false
+symbol = "•  "
+format = '[${symbol}]($style)'
+style = "fg:#a48989"
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ...........       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #

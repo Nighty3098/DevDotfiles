@@ -12,4 +12,6 @@ return {
   "rhysd/vim-clang-format",
 
   "bfrg/vim-cpp-modern",
+
+  "danymat/neogen",
 }

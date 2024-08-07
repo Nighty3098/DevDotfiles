@@ -47,7 +47,8 @@ return {
     dashboard.section.footer.opts.hl = pick_color()
 
     dashboard.section.buttons.val = {
-        dashboard.button("SPC ee", "📁 Open explorer", "<cmd>:Neotree float git_status git_base=main<CR>"),
+        dashboard.button("SPC ee", "🛠️ Git commits", "<cmd>:Telescope git_commits<CR>"),
+        dashboard.button("SPC ee", "📁 Open explorer", "<cmd>:Neotree float<CR>"),
         dashboard.button("SPC ff", "🗒️ Find File", "<cmd>Telescope find_files<CR>"),
         dashboard.button("SPC fw", "🔎 Find Word", "<cmd>Telescope live_grep<CR>"),
         dashboard.button("SPC wr", "🔥 Restore", "<cmd>SessionRestore<CR>"),

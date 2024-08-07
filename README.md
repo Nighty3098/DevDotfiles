@@ -14,38 +14,39 @@
 <br><br><br>
 
 <div align="center">
+    <details>
     <summary><h1 align="center">DE</h1></summary>
     <img src="images/gnome.png" width="70%"/>
     <br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/i3">i3 config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.themes/WhiteSur-custom-panel">gnome theme</a><br><br>
+    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.themes/WhiteSur-custom-panel">gnome shell theme</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/conky/CenteredWidget">conky widget</a><br><br>
+    </details>
 </div>
 <br>
 
-<br><br><br>
-
 <div align="center">
+    <details>
     <summary><h1 align="center">Terminal</h1></summary>
+    <img src="images/term.png" width="60%"/>
     <img src="images/nvim.png" width="60%"/>
     <br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/nvim">nvim config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/kitty">kitty config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/alacritty">alacritty config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/htop">htop config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/neofetch">neofetch config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/starship.toml">starship config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.p10k.zsh">p10k config</a><br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">tmux config</a><br><br>
+    </details>
 </div>
 <br>
 
 
-<div align="center">
-    <h1 align="center">Gnome Extensions</h1>
-</div>
+<div>
+    <details align="center">
+    <summary><h1 align="center">Gnome Extensions</h1></summary>
 
-```
     Blur My Shell
     Clipboard indicator
     Compiz alike magic lamp effect
@@ -62,4 +63,6 @@
     Arc menu
     Dash to dock
     User Themes
-```
+
+</details>
+</div>

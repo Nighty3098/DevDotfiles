@@ -55,6 +55,7 @@ return {
                 gitsigns = true,
                 neotree = false,
                 treesitter = true,
+                zenmode = false,
                 notify = false,
                 mini = {
                     enabled = true,
@@ -88,5 +89,9 @@ return {
 
   {
     "craftzdog/solarized-osaka.nvim",
+  },
+
+  {
+    "rose-pine/neovim",
   },
 }
