@@ -13,6 +13,10 @@
 </div>
 <br><br><br>
 
+`git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules`
+
+<br><br>
+
 <div align="center">
     <details>
     <summary><h1 align="center">DE</h1></summary>
