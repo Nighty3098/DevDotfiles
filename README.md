@@ -32,7 +32,7 @@
 <div align="center">
     <details>
     <summary><h1 align="center">Terminal</h1></summary>
-    <img src="images/term.png" width="60%"/>
+    <img src="images/tern.png" width="60%"/>
     <img src="images/nvim.png" width="60%"/>
     <br><br>
     <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/nvim">nvim config</a><br><br>
