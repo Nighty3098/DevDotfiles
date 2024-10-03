@@ -17,8 +17,6 @@
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules
-cd DevDotfiles
-bash install.sh
 ```
 
 
