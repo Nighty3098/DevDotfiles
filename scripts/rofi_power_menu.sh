@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
-# bdelphin's rofi-power fork
-# Use rofi to call systemctl for shutdown, reboot, etc
-
-
 OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
 
-LAUNCHER="rofi -dmenu -i -p rofi-power  --config /home/shadow31/.config/rofi/config_powermenu"
+LAUNCHER="rofi -dmenu -i -p power"
 USE_LOCKER="true"
-#LOCKER="betterlockscreen -l"
-LOCKER="bash /home/shadow/scripts/custom-i3lock/v3lock"
+LOCKER="betterlockscreen -l"
 
 option=`echo -e $OPTIONS | $LAUNCHER | awk '{print $1}' | tr -d '\r\n'`
 if [ ${#option} -gt 0 ]
@@ -37,3 +32,4 @@ then
         ;;
     esac
 fi
+

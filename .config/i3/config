@@ -6,147 +6,92 @@
 # | | ___) | \ V  V / | |  | | | |__| |_| | |\  |  _|  | | |_| |
 #|___|____/   \_/\_/  |_|  |_|  \____\___/|_| \_|_|   |___\____|
 #
-#    developed by Night3098
+#    developed by Nighty3098
 #
 
-# Этот параметр задаёт клавишу mod
 set $mod Mod4
 
-# Настройка шрифтов
-font pango:monospace 8
-#font pango:DejaVu Sans Mono 8
-#font pango:xos4 Terminus 8
-font Awesome Brands 8
+font pango:DejaVu Sans Mono 8
 
-# Автозапуск приложенй
+
 exec --no-startup-id dex --autostart --environment i3
-#exec --no-startup-id /home/night/scripts/picom/build/src/picom -b --refresh-rate 156 --vsync --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-for-transient-window fly-in  --animation-stiffnes 500 --corner-radius 5 --vsync
-exec --no-startup-id /home/night/scripts/picom/build/src/picom -b --refresh-rate 144 --vsync  --corner-radius 15 -o 0 
+exec --no-startup-id picom --animations
 exec --no-startup-id pulseaudio
 exec --no-startup-id cpupower frequency-set -g performance
-#exec --no-startup-id nitrogen --restore
+exec --no-startup-id clipman
 exec --no-startup-id wal -R
-exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 165
+exec --no-startup-id dunst
+exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 165 --dpi 220
 
-#настройка раскладки клавиатуры
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 
-# нaстройка плавающих окон
 for_window [class="Tk"] floating enable
-for_window [class="Tk"] move absolute position center
+for_window [class="CodeKeeper"] move absolute position center
 for_window [class="Nitrogen"] floating enable
 for_window [class="Nitrogen"] move absolute position center
 
 #xprop | grep WM_CLASS
 
-# настройка расположения программ 
 
-assign [class="firefox"] $ws3
-assign [class="qutebrowser"] $ws3
-assign [class="TelegramDesktop"] $ws5
-assign [class="discord"] $ws5
-assign [class="nvim"] $ws2
-assign [class="kitty"] $ws1
-assign [class="Pcmanfm"] $ws4
-assign [class="code-oss"] $ws2
-#assign [class="mpv"] $ws7
-assign [class="4K Video Downloader"] $ws7
-assign [class="qbittorrent"] $ws10
-assign [class="codelite"] $ws2
-assign [class="jupyter-qtconsole"] $ws2
-assign [class="Blender"] $ws6
-assign [class="Gimp"] $ws6
-assign [class="google-chrome"] $ws3
-
-# Это запуск менеджера сети
 exec --no-startup-id nm-applet
 
-# Установка клавиш для PulseAudio.
+bindsym $mod+Shift+v exec --no-startup-id rofi-bluetooth
+
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym $mod+Shift++ exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym $mod+Shift+- exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym $mod+Ctrl+Up exec --no-startup-id bash ~/scripts/vol.sh volume_up
+bindsym $mod+Ctrl+Down exec --no-startup-id bash ~/scripts/vol.sh volume_down
 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-
-# Increase brightness
 bindsym XF86MonBrightnessDown exec xbacklight -inc 10 && $refresh_i3status
-# Decrease brightness
 bindsym XF86MonBrighnessUp exec xbacklight -dec 10 && $refresh_i3status
 
 
-# $mod+space переключение в плавающее окно
-# floating_modifier $mod+space
-
 floating_modifier $mod
 
-# запуск терминала
-#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty
 
-# Закрыть прогу в фокусе
-bindsym $mod+Shift+q kill
+bindsym $mod+l exec betterlockscreen -l
 
-# запуск скриптов
+bindsym $mod+q kill
+
+bindsym $mod+c exec --no-startup-id bash ~/scripts/rofi_tools_menu.sh
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+t exec bash /home/night/scripts/themechanger.sh
+bindsym $mod+t exec bash ~/scripts/sys_stats.sh
 bindsym $mod+p exec flameshot gui
-bindsym $mod+q exec bash /home/night/scripts/rofi_power_menu.sh
-bindsym $mod+z exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
+bindsym $mod+Shift+q exec bash /home/nighty/scripts/rofi_power_menu.sh
 
-# Перемещение фокуса
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# Перемещение фокуса на другие проги
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# Перемещение окон в фокусе
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
-# Перемещение окон в фокусе
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Переключение в горизонтальную ориентацию
 bindsym $mod+h split h
 
-# Переключение в вертикальную ориентацию
 bindsym $mod+v split v
 
-# Переключение в полный экран
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
-#bindsym $mod+a focus parent
 
-# focus the child container
-#bindsym $mod+d focus child
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -158,7 +103,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -170,7 +114,6 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -182,33 +125,22 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -216,32 +148,16 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Execute Polybar Script
 exec_always --no-startup-id bash ~/.config/polybar/start.sh
 
-
-#bar {
-#    font pango:FontAwesome 8
-#    position top
-#    status_command i3status -c ~/.config/i3status/i3status.conf
-#    colors {
-#        background #3A3A3A
-#        statusline #FFFFFF
-#        separator #FFFFFF
-#        focused_workspace  #FFFFFF #6F6F6F #FFFFFF
-#        active_workspace   #151515 #0024FF #0024FF
-#        inactive_workspace #151515 #524D4B #FFFFFF
-#        urgent_workspace   #2f343a #900000 #0024FF
-#    }
-#}
 
 for_window [tiling] border pixel 0
 smart_borders on
 default_border pixel
 
-gaps inner 4
-gaps outer 4
-#smart_gaps on
+gaps inner 7
+gaps outer 7
+smart_gaps off
 
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
@@ -255,5 +171,3 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 
-# Toggle dropdown terminal
-#bindsym $mod+Tab floating toggle exec --no-startup-id "kitty"

@@ -1,8 +1,7 @@
-<h1 align="center">Dev Environment Files</h1>
-
+<br><br><br>
 <div class=badges align="center">
     <img src="header.png" width="90%"/>
-    <br><br>
+    <br><br><br>
     <a href="./LICENSE.md"><img src="https://img.shields.io/github/license/Nighty3098/DevDotfiles?style=for-the-badge&color=a6e0b8&logoColor=85e185&labelColor=1c1c29" /></a>
     <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/issues-pr/Nighty3098/DevDotfiles?style=for-the-badge&color=ef9f9c&logoColor=85e185&labelColor=1c1c29" />
@@ -13,60 +12,23 @@
 </div>
 <br><br><br>
 
-`git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules`
+<h1>Installing</h1>
+
+```bash
+git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules
+```
+
+
+<div align="center">
+    <summary><h1 align="center">Terminal</h1></summary>
+    <img src="images/term.png" width="80%"/>
+    <img src="images/nvim.png" width="80%"/>
+    <img src="images/fetch.png" width="80%"/>
+</div>
 
 <br><br>
-
 <div align="center">
-    <details>
     <summary><h1 align="center">DE</h1></summary>
-    <img src="images/gnome.png" width="70%"/>
-    <br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/i3">i3 config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.themes/WhiteSur-custom-panel">gnome shell theme</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/conky/CenteredWidget">conky widget</a><br><br>
-    </details>
+    <img src="images/de.png" width="70%"/>
 </div>
 <br>
-
-<div align="center">
-    <details>
-    <summary><h1 align="center">Terminal</h1></summary>
-    <img src="images/tern.png" width="60%"/>
-    <img src="images/nvim.png" width="60%"/>
-    <br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/nvim">nvim config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/kitty">kitty config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/htop">htop config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/tree/main/.config/neofetch">neofetch config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.config/starship.toml">starship config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.p10k.zsh">p10k config</a><br><br>
-    <a href="https://github.com/Nighty3098/DevDotfiles/blob/main/.tmux.conf">tmux config</a><br><br>
-    </details>
-</div>
-<br>
-
-
-<div>
-    <details align="center">
-    <summary><h1 align="center">Gnome Extensions</h1></summary>
-
-    Blur My Shell
-    Clipboard indicator
-    Compiz alike magic lamp effect
-    Compiz windows effect
-    Forge
-    Hide items
-    Just perfection
-    Quick settings tweaker
-    Rounded window corners Reborn
-    TopHat
-    Space Bar
-    Undecorate Window
-    Window title is back
-    Arc menu
-    Dash to dock
-    User Themes
-
-</details>
-</div>
