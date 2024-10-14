@@ -1,7 +1,7 @@
 configuration{
     modi: "run,drun,window";
-    lines: 5;
-    font: "JetBrainsMono Nerd Font 10";
+    lines: 10;
+    font: "JetBrainsMono Nerd Font 9";
     show-icons: true;
     icon-theme: "Papirus-dark";
     terminal: "alacritty";
@@ -29,27 +29,27 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 360px;
+    height: 300px;
     border: 3px;
-    border-color: #0A0E14;
-    background-color: #0A0E14;
+    border-color: @background;
+    background-color: @background;
 }
 
 mainbox {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 inputbar {
     children: [prompt,entry];
-    background-color: #0A0E14;
+    background-color: @background;
     border-radius: 10px;
     padding: 2px;
 }
 
 prompt {
-    background-color: @selected-active-background;
+    background-color: @selected-active-foreground;
     padding: 6px;
-    text-color: #0A0E14;
+    text-color: @background;
     border-radius: 3px;
     margin: 20px 0px 0px 20px;
 }
@@ -63,7 +63,7 @@ entry {
     padding: 6px;
     margin: 20px 0px 0px 10px;
     text-color: @normal-foreground;
-    background-color: #0A0E14;
+    background-color: @background;
     placeholder:"Search";
 }
 
@@ -72,13 +72,13 @@ listview {
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 2;
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element {
     border-radius: 3px;
     padding: 5px;
-    background-color: #0A0E14;
+    background-color: @background;
     text-color: @normal-foreground  ;
 }
 
@@ -88,45 +88,45 @@ element-icon {
 
 
 element normal normal {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element normal urgent {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element normal active {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element alternate normal {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element alternate urgent {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element alternate active {
-    background-color: #0A0E14;
+    background-color: @background;
 }
 
 element selected normal {
     border-radius: 3px;
-    background-color:  @selected-active-background ;
-    text-color: #0A0E14  ;
+    background-color:  @selected-active-foreground ;
+    text-color: @background  ;
 }
 
 element selected urgent {
     border-radius: 3px;
-    background-color:  @selected-active-background ;
-    text-color: #0A0E14  ;
+    background-color:  @selected-active-foreground ;
+    text-color: @background  ;
 }
 
 element selected active {
     border-radius: 3px;
-    background-color:  @selected-active-background ;
-    text-color: #0A0E14  ;
+    background-color:  @selected-active-foreground ;
+    text-color: @background  ;
 }
 
 mode-switcher {
@@ -136,7 +136,7 @@ mode-switcher {
 button {
     border-radius: 3px;
     padding: 10px;
-    background-color: #0A0E14;
+    background-color: @background;
     text-color: @selected-normal-foreground;
     vertical-align: 0.5;
     horizontal-align: 0.5;
@@ -144,10 +144,10 @@ button {
 
 button selected {
   border-radius: 3px;
-  background-color: #0A0E14;
-  text-color: @selected-active-background;
+  background-color: @background;
+  text-color: @selected-active-foreground;
 }
 
 scrollbar {
-    background-color : #0A0E14;
+    background-color : @background;
 }
