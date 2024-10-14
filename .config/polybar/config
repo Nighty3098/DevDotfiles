@@ -1,6 +1,6 @@
 [colors]
-;background = ${xrdb:color0:#222}
-background = #0A0E14
+background = ${xrdb:color0:#222}
+;background = #24273b
 background-alt = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color7:#222}
@@ -23,21 +23,27 @@ bottom = false
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
 width = 100%
-height = 24
-radius = 10
+height = 27
+radius = 13
 fixed-center = true
+override-redirect = false
+
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
+line-size = 3
 
 separator = ""
 
 border-color = #00000000
-border-left-size = 250
-border-right-size = 250
-border-top-size = 5
+border-left-size = 600
+border-right-size = 600
+border-top-size = 3
+border-bottom-size = 0
+
+dpi-x = 80
+dpi-y = 80
 
 padding-left = 1
 padding-right = 1
@@ -45,13 +51,22 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font:size=8;2"
+font-0 = "JetBrainsMono Nerd Font:size=10;2"
 
 modules-left = menu workspaces
-modules-center = title
-modules-right = xkeyboard volume_percentage date powermenu
+modules-center = cava
+modules-right = xkeyboard bluetooth volume_percentage powermenu date
 
 ;tray-position=center
+tray-scale = 1.0
+
+[module/cava]
+type = custom/script
+tail = true
+exec = $HOME/.config/polybar/cava.sh
+format = <label>
+format-font = 5
+label = %output%
 
 [module/title]
 type = internal/xwindow
@@ -69,10 +84,15 @@ label-empty-underline = ${colors.alert}
 
 [module/powermenu]
 type = custom/text
-content = "  "
+content = " "
 click-right = bash ~/scripts/rofi_power_menu.sh
 click-left = bash ~/scripts/rofi_power_menu.sh
 
+[module/bluetooth]
+type = custom/text
+content = " "
+click-left = rofi-bluetooth
+click-right = rofi-bluetooth
 
 [module/menu]
 type = custom/text
@@ -154,8 +174,8 @@ label-mode-foreground = #000
 label-mode-background = ${colors.foreground}
 
 label-focused = %icon%
-label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.foreground}
+label-focused-foreground = ${colors.foreground}
+label-focused-underline = ${colors.foreground}
 label-focused-padding = 2
 
 label-unfocused = %icon%
@@ -187,13 +207,17 @@ label = " %percentage_used%%"
 [module/volume_percentage]
 type = internal/volume
 
-format-volume-prefix = " "
+format-volume-prefix = ""
 format-volume = <label-volume>
 
-label-volume = %percentage%%
+label-volume = " "
 
-format-muted-prefix = " "
-label-muted = muted
+;label-volume = %percentage%%
+
+format-muted-prefix = ""
+label-muted = " "
+
+click-right = bash ~/scripts/set_vol_output.sh
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -211,11 +235,11 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %Y-%m-%d  "
 
 time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
 
-label = %date%  %time%
+label = "%date%  %time%  "
