@@ -1,0 +1,295 @@
+[colors]
+background = ${xrdb:color0:#222}
+;background = #24273b
+background-alt = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+teal = #009999
+
+[bar/monitor]
+inherit = bar/root
+radius = 15
+override-redirect = true
+
+width=10%
+
+offset-x = 80%
+border-left-size = 1%
+border-right-size = 0.5%
+
+modules-left =
+modules-center = cpu memory temperature
+modules-right =
+
+[bar/date]
+inherit = bar/root
+radius = 15
+override-redirect = true
+
+line-size = 2
+
+border-color = #00000000
+width=10%
+border-left-size = 0.5%
+border-right-size = 1%
+
+offset-x = 90%
+
+modules-left =
+modules-center = xkeyboard date
+modules-right =
+
+[bar/title]
+inherit = bar/root
+radius = 15
+override-redirect = true
+
+line-size = 2
+
+offset-x = 0%
+
+border-color = #00000000
+width = 10%
+border-left-size = 1%
+border-right-size = 1%
+
+modules-left =
+modules-center = title
+modules-right =
+
+[bar/root]
+bottom = false
+scroll-up = i3-msg workspace next_on_output
+scroll-down = i3-msg workspace prev_on_output
+height = 32
+radius = 15
+fixed-center = true
+override-redirect = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+
+border-left-size = 35%
+border-right-size = 35%
+border-color = #00000000
+border-top-size = 5
+border-bottom-size = 0
+
+dpi-x = 90
+dpi-y = 90
+
+padding = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-1 = "FiraCode Nerd Font:size=10;1"
+font-0 = "JetBrainsMono Nerd Font:size=9;2"
+
+modules-left = menu
+modules-center = workspaces
+modules-right = commands
+
+enable-ipc = true
+wm-restack = i3
+
+
+[module/cava]
+type = custom/script
+tail = true
+exec = $HOME/.config/polybar/cava.sh
+format = <label>
+label = %output%
+
+[module/title]
+type = internal/xwindow
+format = " <label>"
+format-foreground = ${colors.foreground}
+format-padding = 0
+
+label =" %title% "
+label-maxlen = 20
+
+label-empty = " Desktop "
+label-empty-foreground = ${colors.foreground}
+;label-empty-underline = ${colors.alert}
+
+[module/tray]
+type = internal/tray
+
+tray-size = 15px
+format-margin = 10px
+tray-spacing = 10px
+
+[module/powermenu]
+type = custom/text
+content = " "
+click-right = bash ~/scripts/rofi_power_menu.sh
+click-left = bash ~/scripts/rofi_power_menu.sh
+
+[module/commands]
+type = custom/text
+content = "  "
+click-left = bash ~/scripts/rofi_tools_menu.sh
+click-right = bash ~/scripts/rofi_tools_menu.sh
+
+[module/bluetooth]
+type = custom/text
+content = "  "
+click-left = rofi-bluetooth
+click-right = rofi-bluetooth
+
+[module/menu]
+type = custom/text
+content = "   "
+click-left = rofi -show drun
+click-right = bash ~/scripts/themechanger.sh
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 100
+interval = 1
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline =
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${colors.col1}
+
+format-full-prefix = ""
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+
+animation-charging-0 =  ⚡
+animation-charging-1 =  ⚡
+animation-charging-2 =  ⚡
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+warn-temperature = 60
+
+units = true
+
+format = <label>
+format-warn = <label-warn>
+
+label =  %temperature-c%
+label-warn =  %temperature-c%
+label-warn-foreground = #f00
+format-foreground = ${colors.col2}
+
+[module/workspaces]
+type = internal/i3
+pin-workspaces = false
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+
+format = <label-state> <label-mode>
+
+ws-icon-0 = "1;"
+ws-icon-1 = "2;"
+ws-icon-2 = "3;"
+ws-icon-3 = "4;"
+ws-icon-4 = "5;"
+ws-icon-5 = "6;"
+ws-icon-6 = "7;"
+ws-icon-7 = "8;"
+ws-icon-8 = "9;"
+ws-icon-9 = "10;"
+ws-icon-default = ""
+
+label-mode = %mode%
+label-mode-padding = 2
+;label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
+
+label-focused = %icon%
+label-focused-foreground = ${colors.primary}
+;label-focused-underline = ${colors.foreground}
+label-focused-padding = 2
+
+label-unfocused = %icon%
+label-unfocused-padding = 2
+
+label-visible = %icon%
+label-visible-underline = ${self.label-focused-background}
+label-visible-padding = ${self.label-focused-padding}
+
+label-empty = %icon%
+label-empty-padding = 2
+
+label-urgent = %icon%
+label-urgent-padding = 2
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = ""
+label = " %percentage:2%%"
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+warn-percentage = 90
+label = " %percentage_used%%"
+
+[module/volume_percentage]
+type = internal/volume
+
+format-volume-prefix = ""
+format-volume = <label-volume>
+
+label-volume = " "
+
+;label-volume = %percentage%%
+
+format-muted-prefix = ""
+label-muted = " "
+
+click-right = bash ~/scripts/set_vol_output.sh
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = ""
+
+label-layout = " %layout%"
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = "%H:%M"
+time-alt = "%H:%M:%S"
+
+format-prefix = 
+
+label = " %time%"

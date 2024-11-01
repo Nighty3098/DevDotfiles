@@ -39,7 +39,6 @@
     vertical_alignment = center
 
 
-
 [experimental]
     per_monitor_dpi = false
 

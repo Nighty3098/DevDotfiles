@@ -140,49 +140,58 @@ untracked = "󱅘 ${count}"
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~     LANGUAGES     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-[java]
-disabled = false
-symbol = "•  "
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+[c]
+disabled=true
 
-[python]
-disabled = false
-pyenv_version_name= false
-python_binary = 'python'
-format = '[${symbol}(\($virtualenv\))]($style)'
-style = "fg:#a48989"
-symbol = "• 󱔎 "
+[conda]
+disabled=true
+symbol = " "
+
+[dart]
+disabled=true
+symbol = " "
+
+[perl]
+disabled=true
+symbol = " "
+
+[php]
+disabled=true
+symbol = " "
+
+
+[ruby]
+disabled=true
+symbol = " "
+
+[java]
+disabled=true
+symbol = " "
 
 [lua]
-disabled = false
-symbol = "• "
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+disabled=true
+symbol = " "
 
 [nodejs]
-disabled = false
-symbol = "• 󰎙 "
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+disabled=true
 
-[package]
-disabled = false
-symbol = "•  "
-display_private = false
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+[swift]
+disabled=true
+symbol = "ﯣ "
 
-[docker_context]
-disabled = false
-symbol = "•  "
-only_with_files = true
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+[julia]
+disabled=true
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
 
-[golang]
-disabled = false
-symbol = "•  "
-format = '[${symbol}]($style)'
-style = "fg:#a48989"
+[python]
+disabled=true
+format = 'via [${symbol}${pyenv_prefix}${version}( $virtualenv)]($style) '
+symbol = " "
+
+[rust]
+disabled=true
+format = "[$symbol$version]($style) "
+symbol = " "
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ...........       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #

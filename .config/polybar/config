@@ -7,80 +7,86 @@ foreground-alt = ${xrdb:color7:#222}
 primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
+teal = #009999
 
-;[colors]
-;background = #1E1D2F
-;background-alt = #1E1D2F
-;foreground = #7aa2f7
-;foreground-alt = #D9E0EE
-;primary = #F8BD96
-;secondary = #8ABEB7
-;alert = #F07178
-
-[bar/test]
+[bar/root]
 bottom = false
-
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
-width = 100%
-height = 27
-radius = 13
+height = 32
+radius = 15
 fixed-center = true
 override-redirect = false
-
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 2
 
-separator = ""
-
+border-left-size = 25%
+border-right-size = 25%
 border-color = #00000000
-border-left-size = 600
-border-right-size = 600
-border-top-size = 3
+border-top-size = 5
 border-bottom-size = 0
 
-dpi-x = 80
-dpi-y = 80
+dpi-x = 90
+dpi-y = 90
 
-padding-left = 1
-padding-right = 1
+padding = 2
 
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font:size=10;2"
+font-1 = "FiraCode Nerd Font:size=10;1"
+font-0 = "JetBrainsMono Nerd Font:size=9;2"
 
-modules-left = menu workspaces
-modules-center = cava
-modules-right = xkeyboard bluetooth volume_percentage powermenu date
+modules-left = menu windowlist
+;;player-mpris-simple
+modules-center = workspaces
+modules-right = xkeyboard  date
 
-;tray-position=center
-tray-scale = 1.0
+enable-ipc = true
+wm-restack = i3
+
+[module/windowlist]
+type = custom/script
+exec = ~/.config/polybar/windowlist/main 2> /dev/null
+tail = true
+
+[module/player-mpris-simple]
+type = custom/script
+exec = ~/.config/polybar/music.sh
+interval = 3
+click-left = playerctl previous &
+click-right = playerctl next &
+click-middle = playerctl play-pause &
 
 [module/cava]
 type = custom/script
 tail = true
 exec = $HOME/.config/polybar/cava.sh
 format = <label>
-format-font = 5
 label = %output%
 
 [module/title]
 type = internal/xwindow
-format =   <label>
+format = "<label>"
 format-foreground = ${colors.foreground}
 format-padding = 0
 
 label =" %title% "
-label-maxlen = 40
+label-maxlen = 20
 
-label-empty = " Finder "
+label-empty = " Desktop "
 label-empty-foreground = ${colors.foreground}
-label-empty-underline = ${colors.alert}
+;label-empty-underline = ${colors.alert}
 
+[module/tray]
+type = internal/tray
+
+tray-size = 15px
+format-margin = 10px
+tray-spacing = 10px
 
 [module/powermenu]
 type = custom/text
@@ -88,15 +94,21 @@ content = " "
 click-right = bash ~/scripts/rofi_power_menu.sh
 click-left = bash ~/scripts/rofi_power_menu.sh
 
+[module/commands]
+type = custom/text
+content = "  "
+click-left = bash ~/scripts/rofi_tools_menu.sh
+click-right = bash ~/scripts/rofi_tools_menu.sh
+
 [module/bluetooth]
 type = custom/text
-content = " "
+content = "  "
 click-left = rofi-bluetooth
 click-right = rofi-bluetooth
 
 [module/menu]
 type = custom/text
-content = "   "
+content = "   "
 click-left = rofi -show drun
 click-right = bash ~/scripts/themechanger.sh
 
@@ -138,44 +150,44 @@ units = true
 format = <label>
 format-warn = <label-warn>
 
-label = %temperature-c%
-label-warn = %temperature-c%
+label =  %temperature-c%
+label-warn =  %temperature-c%
 label-warn-foreground = #f00
 format-foreground = ${colors.col2}
 
 [module/workspaces]
 type = internal/i3
-
-enable-click = true
-enable-scroll = true
-reverse-scroll = true
-pin-workspaces = true
-index-sort = true
+pin-workspaces = false
 strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
 fuzzy-match = true
 
 format = <label-state> <label-mode>
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 10;
-ws-icon-default = 
+ws-icon-0 = "1;"
+ws-icon-1 = "2;"
+ws-icon-2 = "3;"
+ws-icon-3 = "4;"
+ws-icon-4 = "5;"
+ws-icon-5 = "6;"
+ws-icon-6 = "7;"
+ws-icon-7 = "8;"
+ws-icon-8 = "9;"
+ws-icon-9 = "10;"
+ws-icon-default = ""
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.foreground}
+;label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
 
 label-focused = %icon%
-label-focused-foreground = ${colors.foreground}
-label-focused-underline = ${colors.foreground}
+label-focused-foreground = ${colors.primary}
+;label-focused-underline = ${colors.foreground}
 label-focused-padding = 2
 
 label-unfocused = %icon%
@@ -195,14 +207,14 @@ label-urgent-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = ""
-label = "%percentage:2%%"
+label = " %percentage:2%%"
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
 warn-percentage = 90
-label = " %percentage_used%%"
+label = " %percentage_used%%"
 
 [module/volume_percentage]
 type = internal/volume
@@ -235,11 +247,11 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d  "
+date-alt = "   %Y-%m-%d"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "%H:%M"
+time-alt = "%H:%M:%S"
 
 format-prefix = 
 
-label = "%date%  %time%  "
+label = " %time%%date%"

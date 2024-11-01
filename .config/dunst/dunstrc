@@ -1,13 +1,13 @@
 [global]
-    font = "Font Awesome 5 Free Regular 12, Ubuntu Light 12"
+    font = "Font Awesome 5 Free Regular 12, Maple Mono Italic 12"
     allow_markup = yes
     markup = yes
-    format = "<span foreground='#5bb1b4'><b>%s</b></span>\n%b"
+    format = "<span foreground='#5bb1b4'><b>%s</b></span>\n\n%b"
     sort = yes
     indicate_hidden = yes
     bounce_freq = 0
     show_age_threshold = 60
-    word_wrap = yes
+    word_wrap = no
     ignore_newline = false
     origin = bottom-center
     transparency = 0
@@ -26,9 +26,9 @@
     icon_corner_radius = 10
     frame_color = "#3c4549"
     frame_width = 1
-    width = 400
-    progress_bar_max_width = 400
-    progress_bar_min_width = 400
+    width = 300
+    progress_bar_max_width = 250
+    progress_bar_min_width = 250
     progress_bar_height = 10
     progress_bar_frame_width = 1
     progress_bar_corner_radius = 5
@@ -41,11 +41,11 @@
 
 
 [urgency_low]
-    background = "#0e0625"
-    foreground = "#bcdacb"
+    background = "#1e213a"
+    foreground = "#dde0ed"
 [urgency_normal]
-    background = "#0e0625"
-    foreground = "#bcdacb"
+    background = "#1e213a"
+    foreground = "#dde0ed"
 [urgency_critical]
-    background = "#0e0625"
-    foreground = "#bcdacb"
+    background = "#1e213a"
+    foreground = "#dde0ed"

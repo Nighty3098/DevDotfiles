@@ -1,3 +1,5 @@
 pkill polybar
-polybar test &
-#polybar dock &
+polybar root &
+polybar title &
+polybar date &
+#polybar monitor &

@@ -1,11 +1,13 @@
+@import "~/.cache/wal/colors-rofi-dark"
+
 configuration{
     modi: "run,drun,window";
     lines: 10;
-    font: "JetBrainsMono Nerd Font 9";
+    font: "Maple Mono Italic 9";
     show-icons: true;
-    icon-theme: "Papirus-dark";
+//    icon-theme: "Papirus-dark";
     terminal: "alacritty";
-    drun-display-format: "{icon} {name}";
+    drun-display-format: "{icon}{name}";
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
@@ -13,15 +15,12 @@ configuration{
     display-run: "   Run ";
     display-window: "   window";
     display-Network: " 󰤨  Network";
-    sidebar-mode: true;
+    sidebar-mode: false;
 }
 
 * {
-    width: 600;
+    width: 30%;
 }
-
-@import "~/.cache/wal/colors-rofi-dark"
-
 
 element-text, element-icon , mode-switcher {
     background-color: inherit;
@@ -29,7 +28,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 300px;
+    height: 500px;
     border: 3px;
     border-color: @background;
     background-color: @background;
@@ -40,22 +39,24 @@ mainbox {
 }
 
 inputbar {
-    children: [prompt,entry];
-    background-color: @background;
+	children: 			[ prompt, entry ];
+	background-image:               url("~/.current_wallpaper", width);
+	expand:                         false;
+	padding:                        60px 60px 60px 60px;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 2px;
 }
 
 prompt {
     background-color: @selected-active-foreground;
     padding: 6px;
     text-color: @background;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 20px 0px 0px 20px;
 }
 
 textbox-prompt-colon {
-    expand: false;
+    expand: true;
     str: "";
 }
 
@@ -65,25 +66,27 @@ entry {
     text-color: @normal-foreground;
     background-color: @background;
     placeholder:"Search";
+    border-radius: 10px;
 }
 
 listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
-    columns: 2;
+    columns: 3;
+    scrollbar: false;
     background-color: @background;
 }
 
 element {
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 5px;
     background-color: @background;
     text-color: @normal-foreground  ;
 }
 
 element-icon {
-    size: 25px;
+    size: 20px;
 }
 
 
@@ -112,19 +115,19 @@ element alternate active {
 }
 
 element selected normal {
-    border-radius: 3px;
+    border-radius: 10px;
     background-color:  @selected-active-foreground ;
     text-color: @background  ;
 }
 
 element selected urgent {
-    border-radius: 3px;
+    border-radius: 10px;
     background-color:  @selected-active-foreground ;
     text-color: @background  ;
 }
 
 element selected active {
-    border-radius: 3px;
+    border-radius: 10px;
     background-color:  @selected-active-foreground ;
     text-color: @background  ;
 }
@@ -134,7 +137,7 @@ mode-switcher {
 }
 
 button {
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 10px;
     background-color: @background;
     text-color: @selected-normal-foreground;
@@ -143,7 +146,7 @@ button {
 }
 
 button selected {
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: @background;
   text-color: @selected-active-foreground;
 }

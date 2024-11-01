@@ -1,35 +1,34 @@
 #!/usr/bin/env bash
 
-OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
+UPTIME=$(uptime -p)
+OPTIONS=("   ${UPTIME}" "   Reboot system" "   Power-off system" "   Suspend system" "   Hibernate system" "   Lock system" "   Exit window manager")
 
-LAUNCHER="rofi -dmenu -i -p power"
+LAUNCHER="rofi -dmenu -i -p POWER "
 USE_LOCKER="true"
 LOCKER="betterlockscreen -l"
 
-option=`echo -e $OPTIONS | $LAUNCHER | awk '{print $1}' | tr -d '\r\n'`
-if [ ${#option} -gt 0 ]
-then
-    case $option in
-      Exit)
-        i3-msg exit
-        ;;
-      Reboot)
-        systemctl reboot
-        ;;
-      Power-off)
-        systemctl poweroff
-        ;;
-      Suspend)
-        $($USE_LOCKER) && "$LOCKER"; systemctl suspend
-        ;;
-      Hibernate)
-        $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
-        ;;
-      Lock)
-	$LOCKER
-	;;
-      *)
-        ;;
-    esac
-fi
+option=$()
 
+option=$(printf "%s\n" "${OPTIONS[@]}" | $LAUNCHER)
+case $option in
+  "   Exit window manager")
+    i3-msg exit
+    ;;
+  "   Reboot system")
+    systemctl reboot
+    ;;
+  "   Power-off system")
+    systemctl poweroff
+    ;;
+  "   Suspend system")
+    $($USE_LOCKER) && "$LOCKER"; systemctl suspend
+    ;;
+  "   Hibernate system")
+    $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
+    ;;
+  "   Lock system")
+  $LOCKER
+  ;;
+  *)
+    ;;
+esac
