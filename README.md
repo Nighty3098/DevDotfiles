@@ -20,13 +20,13 @@ git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules
 
 <div align="center">
     <summary><h1 align="center">DE</h1></summary>
-    <img src="images/de.png" width="70%"/>
+    <img src="images/de.png" width="100%"/>
 </div>
 
 <br><br>
 
 <div align="center">
     <summary><h1 align="center">NVim</h1></summary>
-    <img src="images/nvim_1.png" width="80%"/>
-    <img src="images/nvim_3.png" width="80%"/>
+    <img src="images/nvim_1.png" width="90%"/>
+    <img src="images/nvim_3.png" width="90%"/>
 </div>
