@@ -8,6 +8,8 @@
     <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
     <br><br>
     <img class="badge" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&color=eed49f"  style="border-radius: 5px;"/>
+    <br><br>
+    <a href="https://github.com/Nighty3098/nFetch"><kbd> <br>Custom system fetch<br> </kbd></a>  <a href="https://github.com/Nighty3098/nvim"><kbd> <br>Nvim config<br> </kbd></a>
 </div>
 <br><br><br>
 
@@ -33,6 +35,7 @@ bash install.sh
 <div align="center">
     <summary><h1 align="center">Visual Studio Code</h1></summary>
     <img src="images/code_wal.png" width="80%"/>
+    <img src="https://github.com/user-attachments/assets/28cb5943-899b-4fe3-8a53-8fe52672c7ff" width="80%"/>
     <img src="images/code_2.png" width="80%"/>
     <img src="images/code.png" width="80%"/>
 </div>
