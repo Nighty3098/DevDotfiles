@@ -1,3 +1,7 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/Nighty3098/nvim
+
+[submodule "picom_git"]
+	path = picom_git
+	url = https://github.com/tryone144/picom
