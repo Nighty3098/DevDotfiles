@@ -16,17 +16,23 @@
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/Nighty3098/DevDotfiles.git --recurse-submodules
+bash install.sh
 ```
 
 <div align="center">
     <summary><h1 align="center">DE</h1></summary>
-    <img src="images/de.png" width="100%"/>
+    <img src="images/de.png" width="90%"/>
 </div>
-
 <br><br>
-
 <div align="center">
-    <summary><h1 align="center">NVim</h1></summary>
-    <img src="images/nvim_1.png" width="90%"/>
-    <img src="images/nvim_3.png" width="90%"/>
+    <summary><h1 align="center">Neovim</h1></summary>
+    <img src="images/nvim_1.png" width="80%"/>
+    <img src="images/nvim_2.png" width="80%"/>
+</div>
+<br><br>
+<div align="center">
+    <summary><h1 align="center">Visual Studio Code</h1></summary>
+    <img src="images/code_wal.png" width="80%"/>
+    <img src="images/code_2.png" width="80%"/>
+    <img src="images/code.png" width="80%"/>
 </div>
