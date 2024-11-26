@@ -1,0 +1,78 @@
+import = [
+    #"~/.config/alacritty/themes/themes/ayu_dark.toml"
+    #"~/.config/alacritty/themes/themes/coolnight.toml"
+    "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+]
+
+live_config_reload = true
+
+[ env ]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 30
+padding.y = 30
+
+decorations = "None"
+opacity = 1.0
+dynamic_title = true
+blur = true
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+#normal.family = ""
+size = 20
+
+# BEGIN WAL
+#[colors.primary]
+#background = '#0E120C'
+#foreground = '#bfcccd'
+
+#[colors.cursor]
+#text   = '#0E120C' # Apply background color to color of text inside cursor
+#cursor = '#bfcccd' # Apply foreground color to color of cursor
+
+#[colors.vi_mode_cursor]
+#text    = '#0E120C' # Same as above
+#cursor  = '#bfcccd'
+
+#[colors.search.matches]
+#foreground = '#0E120C' # Same as above
+#background = '#bfcccd' # Apply bright/white color to bg color of matching search
+
+#[colors.search.focused_match]
+#foreground = 'CellBackground'
+#background = 'CellForeground'
+
+#[colors.line_indicator]
+#foreground = 'None'
+#background = 'None'
+
+#[colors.footer_bar]
+#foreground = '#858e8f'
+#background = '#bfcccd'
+
+[colors.selection]
+#text       = 'CellBackground'
+#background = 'CellForeground'
+
+#[colors.normal]
+#black   = '#0E120C'
+#red     = '#97754D'
+#green   = '#BA8C3E'
+#yellow  = '#5B7B87'
+#blue    = '#6E8D94'
+#magenta = '#78999F'
+#cyan    = '#99A6A4'
+#white   = '#bfcccd'
+
+#[colors.bright]
+#black   = '#858e8f'
+#red     = '#97754D'
+#green   = '#BA8C3E'
+#yellow  = '#5B7B87'
+#blue    = '#6E8D94'
+#magenta = '#78999F'
+#cyan    = '#99A6A4'
+#white   = '#bfcccd'
+# END WAL

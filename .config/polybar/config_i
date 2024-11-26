@@ -1,6 +1,6 @@
 [colors]
 background = ${xrdb:color0:#222}
-;background = #24273b
+;background = #000000
 background-alt = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color7:#222}
@@ -9,24 +9,8 @@ secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
 teal = #009999
 
-[bar/monitor]
-inherit = bar/root
-radius = 15
-override-redirect = true
-
-width=10%
-
-offset-x = 80%
-border-left-size = 1%
-border-right-size = 0.5%
-
-modules-left =
-modules-center = cpu memory temperature
-modules-right =
-
 [bar/date]
 inherit = bar/root
-radius = 15
 override-redirect = true
 
 line-size = 2
@@ -44,7 +28,6 @@ modules-right =
 
 [bar/title]
 inherit = bar/root
-radius = 15
 override-redirect = true
 
 line-size = 2
@@ -57,15 +40,15 @@ border-left-size = 1%
 border-right-size = 1%
 
 modules-left =
-modules-center = title
+modules-center = cava
 modules-right =
 
 [bar/root]
 bottom = false
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
-height = 32
-radius = 15
+height = 26
+radius = 10
 fixed-center = true
 override-redirect = false
 
@@ -74,30 +57,38 @@ foreground = ${colors.foreground}
 
 line-size = 2
 
-border-left-size = 35%
-border-right-size = 35%
+border-left-size = 40%
+border-right-size = 40%
 border-color = #00000000
 border-top-size = 5
 border-bottom-size = 0
 
-dpi-x = 90
-dpi-y = 90
+dpi-x = 100
+dpi-y = 100
 
 padding = 2
 
 module-margin-left = 1
 module-margin-right = 1
 
-font-1 = "FiraCode Nerd Font:size=10;1"
-font-0 = "JetBrainsMono Nerd Font:size=9;2"
+font-1 = "FiraCode Nerd Font:size=7;1"
+font-0 = "JetBrainsMono Nerd Font:size=7;2"
 
-modules-left = menu
+modules-left =
 modules-center = workspaces
-modules-right = commands
+modules-right =
 
 enable-ipc = true
 wm-restack = i3
 
+[module/spacer]
+type = custom/text
+content = " "
+
+[module/windowlist]
+type = custom/script
+exec = ~/.config/polybar/windowlist/main 2> /dev/null
+tail = true
 
 [module/cava]
 type = custom/script
@@ -108,7 +99,7 @@ label = %output%
 
 [module/title]
 type = internal/xwindow
-format = " <label>"
+format = " <label>"
 format-foreground = ${colors.foreground}
 format-padding = 0
 
@@ -122,7 +113,6 @@ label-empty-foreground = ${colors.foreground}
 [module/tray]
 type = internal/tray
 
-tray-size = 15px
 format-margin = 10px
 tray-spacing = 10px
 

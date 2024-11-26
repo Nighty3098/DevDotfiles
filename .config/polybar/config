@@ -1,6 +1,6 @@
 [colors]
 background = ${xrdb:color0:#222}
-;background = #24273b
+;background = #0A0E14
 background-alt = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color7:#222}
@@ -13,8 +13,8 @@ teal = #009999
 bottom = false
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
-height = 32
-radius = 15
+height = 35
+radius = 10
 fixed-center = true
 override-redirect = false
 
@@ -37,16 +37,33 @@ padding = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-1 = "FiraCode Nerd Font:size=10;1"
-font-0 = "JetBrainsMono Nerd Font:size=9;2"
+font-1 = "FiraCode Nerd Font:size=7;1"
+font-0 = "JetBrainsMono Nerd Font:size=7;2"
 
-modules-left = menu windowlist
-;;player-mpris-simple
-modules-center = workspaces
-modules-right = xkeyboard  date
+modules-left = windowlist
+modules-center = xworkspaces
+modules-right = xkeyboard date spacer
 
 enable-ipc = true
 wm-restack = i3
+
+[module/xworkspaces]
+type = internal/xworkspaces
+
+label-active = 
+label-active-padding = 1
+label-active-foreground = ${colors.greying}
+label-active-font = 1
+
+label-occupied = 
+label-occupied-padding = 1
+label-occupied-font = 1
+
+label-empty = 
+label-empty-background = ${colors.background}
+label-empty-padding = 1
+label-empty-font = 1
+
 
 [module/windowlist]
 type = custom/script
@@ -66,7 +83,7 @@ type = custom/script
 tail = true
 exec = $HOME/.config/polybar/cava.sh
 format = <label>
-label = %output%
+label = " %output%"
 
 [module/title]
 type = internal/xwindow
@@ -84,7 +101,8 @@ label-empty-foreground = ${colors.foreground}
 [module/tray]
 type = internal/tray
 
-tray-size = 15px
+tray-position = center
+tray-size = 10px
 format-margin = 10px
 tray-spacing = 10px
 
@@ -254,4 +272,4 @@ time-alt = "%H:%M:%S"
 
 format-prefix = 
 
-label = " %time%%date%"
+label = " %time%%date% "

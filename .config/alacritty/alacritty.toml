@@ -1,6 +1,7 @@
 import = [
+    #"~/.config/alacritty/themes/themes/ayu_dark.toml"
     #"~/.config/alacritty/themes/themes/coolnight.toml"
-    #"~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
+    "~/.config/alacritty/themes/themes/kanagawa_wave.toml"
 ]
 
 live_config_reload = true
@@ -24,20 +25,20 @@ size = 20
 
 # BEGIN WAL
 [colors.primary]
-background = '#1e213a'
-foreground = '#dde0ed'
+background = '#130e0c'
+foreground = '#e1cdbe'
 
 [colors.cursor]
-text   = '#1e213a' # Apply background color to color of text inside cursor
-cursor = '#dde0ed' # Apply foreground color to color of cursor
+text   = '#130e0c' # Apply background color to color of text inside cursor
+cursor = '#e1cdbe' # Apply foreground color to color of cursor
 
 [colors.vi_mode_cursor]
-text    = '#1e213a' # Same as above
-cursor  = '#dde0ed'
+text    = '#130e0c' # Same as above
+cursor  = '#e1cdbe'
 
 [colors.search.matches]
-foreground = '#1e213a' # Same as above
-background = '#dde0ed' # Apply bright/white color to bg color of matching search
+foreground = '#130e0c' # Same as above
+background = '#e1cdbe' # Apply bright/white color to bg color of matching search
 
 [colors.search.focused_match]
 foreground = 'CellBackground'
@@ -48,30 +49,30 @@ foreground = 'None'
 background = 'None'
 
 [colors.footer_bar]
-foreground = '#9a9ca5'
-background = '#dde0ed'
+foreground = '#9d8f85'
+background = '#e1cdbe'
 
 [colors.selection]
 text       = 'CellBackground'
 background = 'CellForeground'
 
 [colors.normal]
-black   = '#1e213a'
-red     = '#B99FB4'
-green   = '#E19EAD'
-yellow  = '#A3A9DC'
-blue    = '#D6B1CF'
-magenta = '#B4C9ED'
-cyan    = '#E8D9DA'
-white   = '#dde0ed'
+black   = '#130e0c'
+red     = '#BA5432'
+green   = '#976E56'
+yellow  = '#7F817B'
+blue    = '#AF8A6E'
+magenta = '#E5A24C'
+cyan    = '#D49A6B'
+white   = '#e1cdbe'
 
 [colors.bright]
-black   = '#9a9ca5'
-red     = '#B99FB4'
-green   = '#E19EAD'
-yellow  = '#A3A9DC'
-blue    = '#D6B1CF'
-magenta = '#B4C9ED'
-cyan    = '#E8D9DA'
-white   = '#dde0ed'
+black   = '#9d8f85'
+red     = '#BA5432'
+green   = '#976E56'
+yellow  = '#7F817B'
+blue    = '#AF8A6E'
+magenta = '#E5A24C'
+cyan    = '#D49A6B'
+white   = '#e1cdbe'
 # END WAL

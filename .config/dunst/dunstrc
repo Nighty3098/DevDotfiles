@@ -9,7 +9,7 @@
     show_age_threshold = 60
     word_wrap = no
     ignore_newline = false
-    origin = bottom-center
+    origin = top-center
     transparency = 0
     idle_threshold = 120
     monitor = 0
@@ -41,11 +41,11 @@
 
 
 [urgency_low]
-    background = "#1e213a"
-    foreground = "#dde0ed"
+    background = "#130e0c"
+    foreground = "#e1cdbe"
 [urgency_normal]
-    background = "#1e213a"
-    foreground = "#dde0ed"
+    background = "#130e0c"
+    foreground = "#e1cdbe"
 [urgency_critical]
-    background = "#1e213a"
-    foreground = "#dde0ed"
+    background = "#130e0c"
+    foreground = "#e1cdbe"

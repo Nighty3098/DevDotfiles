@@ -24,6 +24,7 @@ exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt
 exec_always --no-startup-id pkill conky && conky --config ~/.config/conky/i3.conf
 exec_always --no-startup-id bash ~/.config/polybar/start.sh
 exec --no-startup-id nm-applet
+exec --no-startup-id xset s off && xset dpms 0 0 0
 
 for_window [class="Tk"] floating enable
 for_window [class="CodeKeeper"] move absolute position center
@@ -129,10 +130,10 @@ mode "resize" {
         bindsym l resize shrink height 20 px or 20 ppt
         bindsym semicolon resize grow width 20 px or 20 ppt
 
-        bindsym Left resize shrink width 20 px or 20 ppt
-        bindsym Down resize grow height 20 px or 20 ppt
-        bindsym Up resize shrink height 20 px or 20 ppt
-        bindsym Right resize grow width 20 px or 20 ppt
+        bindsym Left resize shrink width 10 px
+        bindsym Down resize grow height 10 px
+        bindsym Up resize shrink height 10 px
+        bindsym Right resize grow width 10 px
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
