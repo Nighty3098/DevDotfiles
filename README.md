@@ -1,7 +1,7 @@
-<br><br><br>
+<br><br><br><br>
 <div class=badges align="center">
-    <img src="header.png" width="90%"/>
-    <br><br><br>
+    <img src="https://github.com/user-attachments/assets/2b7370a0-9076-4e95-9576-0c3b5559d496" />
+    <br><br><br><br>
     <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/issues-pr/Nighty3098/DevDotfiles?style=for-the-badge&color=ef9f9c&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/last-commit/Nighty3098/DevDotfiles?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=1c1c29"/>
