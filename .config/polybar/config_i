@@ -40,14 +40,14 @@ border-left-size = 1%
 border-right-size = 1%
 
 modules-left =
-modules-center = cava
+modules-center = title
 modules-right =
 
 [bar/root]
 bottom = false
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
-height = 26
+height = 30
 radius = 10
 fixed-center = true
 override-redirect = false
@@ -63,15 +63,15 @@ border-color = #00000000
 border-top-size = 5
 border-bottom-size = 0
 
-dpi-x = 100
-dpi-y = 100
+dpi-x = 95
+dpi-y = 95
 
 padding = 2
 
 module-margin-left = 1
 module-margin-right = 1
 
-font-1 = "FiraCode Nerd Font:size=7;1"
+font-1 = "MesloLGLDZ Nerd Font:size=6;1"
 font-0 = "JetBrainsMono Nerd Font:size=7;2"
 
 modules-left =
@@ -140,96 +140,22 @@ content = "   "
 click-left = rofi -show drun
 click-right = bash ~/scripts/themechanger.sh
 
-[module/battery]
-type = internal/battery
-battery = BAT1
-adapter = AC
-full-at = 100
-interval = 1
-
-format-charging = <animation-charging> <label-charging>
-format-charging-underline =
-
-format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${colors.col1}
-
-format-full-prefix = ""
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-
-animation-charging-0 =  ⚡
-animation-charging-1 =  ⚡
-animation-charging-2 =  ⚡
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-framerate = 750
-
-[module/temperature]
-type = internal/temperature
-warn-temperature = 60
-
-units = true
-
-format = <label>
-format-warn = <label-warn>
-
-label =  %temperature-c%
-label-warn =  %temperature-c%
-label-warn-foreground = #f00
-format-foreground = ${colors.col2}
-
 [module/workspaces]
-type = internal/i3
-pin-workspaces = false
-strip-wsnumbers = true
-index-sort = true
-enable-click = true
-enable-scroll = false
-wrapping-scroll = false
-reverse-scroll = false
-fuzzy-match = true
+type = internal/xworkspaces
 
-format = <label-state> <label-mode>
+label-active = 
+label-active-padding = 1
+label-active-foreground = ${colors.greying}
+label-active-font = 1
 
-ws-icon-0 = "1;"
-ws-icon-1 = "2;"
-ws-icon-2 = "3;"
-ws-icon-3 = "4;"
-ws-icon-4 = "5;"
-ws-icon-5 = "6;"
-ws-icon-6 = "7;"
-ws-icon-7 = "8;"
-ws-icon-8 = "9;"
-ws-icon-9 = "10;"
-ws-icon-default = ""
+label-occupied = ◯
+label-occupied-padding = 1
+label-occupied-font = 1
 
-label-mode = %mode%
-label-mode-padding = 2
-;label-mode-foreground = #000
-label-mode-foreground = ${colors.foreground}
-
-label-focused = %icon%
-label-focused-foreground = ${colors.primary}
-;label-focused-underline = ${colors.foreground}
-label-focused-padding = 2
-
-label-unfocused = %icon%
-label-unfocused-padding = 2
-
-label-visible = %icon%
-label-visible-underline = ${self.label-focused-background}
-label-visible-padding = ${self.label-focused-padding}
-
-label-empty = %icon%
-label-empty-padding = 2
-
-label-urgent = %icon%
-label-urgent-padding = 2
+label-empty = ◯
+label-empty-background = ${colors.background}
+label-empty-padding = 1
+label-empty-font = 1
 
 [module/cpu]
 type = internal/cpu

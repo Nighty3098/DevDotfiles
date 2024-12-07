@@ -10,7 +10,7 @@ alert = ${xrdb:color3:#222}
 teal = #009999
 
 [bar/root]
-bottom = false
+bottom = true
 scroll-up = i3-msg workspace next_on_output
 scroll-down = i3-msg workspace prev_on_output
 height = 35
@@ -23,11 +23,11 @@ foreground = ${colors.foreground}
 
 line-size = 2
 
-border-left-size = 25%
-border-right-size = 25%
+border-left-size = 30%
+border-right-size = 30%
 border-color = #00000000
-border-top-size = 5
-border-bottom-size = 0
+border-top-size = 0
+border-bottom-size = 5
 
 dpi-x = 90
 dpi-y = 90
@@ -40,8 +40,8 @@ module-margin-right = 1
 font-1 = "FiraCode Nerd Font:size=7;1"
 font-0 = "JetBrainsMono Nerd Font:size=7;2"
 
-modules-left = windowlist
-modules-center = xworkspaces
+modules-left = spacer xworkspaces
+modules-center = windowlist
 modules-right = xkeyboard date spacer
 
 enable-ipc = true
@@ -73,7 +73,7 @@ tail = true
 [module/player-mpris-simple]
 type = custom/script
 exec = ~/.config/polybar/music.sh
-interval = 3
+interval = 1
 click-left = playerctl previous &
 click-right = playerctl next &
 click-middle = playerctl play-pause &

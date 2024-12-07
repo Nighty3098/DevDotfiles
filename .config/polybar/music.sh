@@ -2,7 +2,7 @@
 
 truncate_string() {
     local input_string="$1"
-    echo "${input_string:0:25}..."
+    echo "${input_string:0:35}..."
 }
 
 function get_current_song() {

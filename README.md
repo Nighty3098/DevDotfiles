@@ -27,15 +27,14 @@ bash install.sh
 </div>
 <br><br>
 <div align="center">
-    <summary><h1 align="center">Neovim</h1></summary>
+    <summary><h1 align="center">Neovim && Kitty && Tmux</h1></summary>
     <img src="images/nvim_1.png" width="80%"/>
     <img src="images/nvim_2.png" width="80%"/>
+    <img src="images/nvim_3.png" width="80%"/>
 </div>
 <br><br>
 <div align="center">
     <summary><h1 align="center">Visual Studio Code</h1></summary>
     <img src="images/code_wal.png" width="80%"/>
     <img src="https://github.com/user-attachments/assets/28cb5943-899b-4fe3-8a53-8fe52672c7ff" width="80%"/>
-    <img src="images/code_2.png" width="80%"/>
-    <img src="images/code.png" width="80%"/>
 </div>
