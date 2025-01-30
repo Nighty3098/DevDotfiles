@@ -8,14 +8,13 @@
   "editor.accessibilitySupport": "off",
   "editor.autoIndent": "full",
   "editor.bracketPairColorization.enabled": true,
-  "editor.colorDecorators": false,
+  "editor.colorDecorators": true,
   "editor.copyWithSyntaxHighlighting": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.folding": true,
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.folding": false,
   "editor.foldingStrategy": "auto",
-  "editor.fontFamily": "Iosevka",
+  "editor.fontFamily": "Iosevka NF",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
   "editor.lineHeight": 1.9,
   "editor.lineNumbers": "on",
   "editor.matchBrackets": "never",
@@ -29,7 +28,6 @@
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "inline",
   "editor.tabCompletion": "on",
-  "editor.tabSize": 10,
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.hover.enabled": true,
@@ -45,20 +43,16 @@
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "breadcrumbs.enabled": false,
-  
+
   // Настройки интерфейса
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Everforest Dark",
   "workbench.editor.showIcons": true,
   "workbench.editor.showTabs": "multiple",
-  "workbench.iconTheme": "symbols",
-  "workbench.layoutControl.enabled": false,
+  "workbench.editor.tabSizing": "shrink",
   "workbench.panel.defaultLocation": "bottom",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
-  "workbench.tree.indent": 16,
+  "workbench.tree.indent": 10,
   "workbench.view.alwaysShowHeaderActions": true,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.pinnedTabSizing": "compact",
@@ -67,20 +61,38 @@
     "inlineparameters.annotationForeground": "#7b82af",
     "scrollbar.shadow": "#24292e00"
   },
-  
+
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.labelFormat": "short",
+  "workbench.localHistory.maxFileSize": 1000,
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "ayu",
+  "workbench.settings.applyToAllProfiles": [],
+
+  "problems.decorations.enabled": false,
+  "editor.overviewRulerBorder": false,
+
   // Настройки терминала
   "terminal.integrated.fontFamily": "Iosevka",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.lineHeight": 1.3,
+  "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "right",
-  
+
+  // Files
+  "explorer.decorations.badges": false,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.expand": false,
+  "explorer.decorations.colors": true,
+
   // Настройки Git
   "git.enableCommitSigning": true,
   "git.autofetch": true,
-  "git.decorations.enabled": false,
-  
+  "git.decorations.enabled": true,
+
   // Настройки поиска
   "search.useIgnoreFiles": false,
   "search.exclude": {
@@ -91,7 +103,7 @@
     "**/.next": true,
     "**/data": true
   },
-  
+
   // Настройки файлов
   "files.restoreUndoStack": false,
   "files.insertFinalNewline": true,
@@ -103,20 +115,20 @@
     "**/qrc_**.cpp": true,
     "**/**.pyc": true
   },
-  
+
   // Настройки отладки
-  "debug.toolBarLocation": "commandCenter",
-  "debug.enableStatusBarColor": false,
-  "debug.console.fontFamily": "Iosevka",
+  "debug.toolBarLocation": "floating",
+  "debug.enableStatusBarColor": true,
+  "debug.console.fontFamily": "Iosevka NF",
   "debug.disassemblyView.showSourceCode": false,
+  "debug.console.fontSize": 12,
+  "debug.console.lineHeight": 20,
 
   // Настройки SCM
-  "scm.diffDecorations": "none",
+  "scm.diffDecorations": "gutter",
   "scm.showIncomingChanges": "always",
   "scm.showOutgoingChanges": "always",
 
-  // Настройки анимации
-  "animations.Install-Method": "Apc Customize UI++",
 
   // Настройки окна
   "window.menuBarVisibility": "compact",
@@ -126,64 +138,153 @@
   "window.density.editorTabHeight": "default",
   "window.zoomLevel": 3,
   "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  "window.nativeFullScreen": true,
+  "window.nativeTabs": false,
 
-  // Настройки APC
-  "apc.electron": {
-    "backgroundColor": "#00000000",
-    "frame": false,
-    "vibrancy": "fullscreen-ui",
-    "visualEffectState": "active",
-    "titleBarStyle": "hidden",
-    "trafficLightPosition": {
-      "x": 15,
-      "y": 14
-    }
+  "editor.guides.indentation": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "One Dark italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "One Dark italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "chat.commandCenter.enabled": false,
+  "errorLens.borderRadius": "12px",
+  "errorLens.fontWeight": "900",
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.replaceLinebreaksSymbol": "- ",
+  "errorLens.searchForProblemQuery": "https://google.com/?q=$message",
+  "editor.fontSize": 13,
+  "workbench.productIconTheme": "bongocat",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.enableCodeLens": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.layoutControl.enabled": false,
+  "errorLens.editorHoverPartsEnabled": {
+    "messageEnabled": true,
+    "buttonsEnabled": true,
+    "sourceCodeEnabled": true
+  },
+  "errorLens.fontFamily": "Iosevka NF",
+  "errorLens.gutterIconSet": "squareRounded",
+  "errorLens.statusBarMessageTemplate": "$count",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.margin": "0px",
+  "errorLens.severityText": [],
+  "errorLens.statusBarIconsAtZero": "hide",
+  "errorLens.respectUpstreamEnabled": {
+    "statusBar": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": ". --ext .ts --ext .tsx",
+  "errorLens.excludeBySource": ["ts(1239)"],
+
+  "workbench.startupEditor": "none",
+  "editor.cursorBlinking": "phase",
+
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEnums": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.symbolPath": "off",
+
+  "apc.listRow": {
+    "height": 28,
+    "fontSize": 14
   },
   "apc.sidebar.titlebar": {
-    "height": -20,
-    "fontSize": -10
+    "fontSize": 0
   },
-  "apc.stylesheet": {
-    ".tabs-container": "margin-bottom: 10px;"
+  "apc.statusBar": {
+    "fontSize": 13,
+    "height": 25
   },
-  "apc.menubar.compact": true,
 
-  // Настройки CMake
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
+  "vscode_custom_css.imports": [
+    "file:///home/nighty/.config/Code/User/custom.css"
   ],
-  "cmake.showOptionsMovedNotification": false,
-
-  // Настройки GitLens
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.hovers.currentLine.enabled": false,
-  "gitlens.blame.line.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.graph.minimap.additionalTypes": [
-    "localBranches",
-    "stashes",
-    "remoteBranches",
-    "pullRequests",
-    "tags"
-  ],
-  "gitlens.views.scm.grouped.views": {
-    "commits": true,
-    "branches": true,
-    "remotes": true,
-    "stashes": true,
-    "tags": true,
-    "worktrees": true,
-    "contributors": true,
-    "repositories": false,
-    "searchAndCompare": false,
-    "launchpad": true
-  },
-
-  // Настройки темы
-  "theme-changer.settings.theme": "Dynamite",
-  "theme-changer.settings.colors": [],
-  "editor.guides.indentation": false
+  "workbench.activityBar.location": "top",
 }
