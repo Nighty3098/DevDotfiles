@@ -1,0 +1,104 @@
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item
+  > .statusbar-item-label {
+  background-color: transparent;
+  font-weight: 900;
+  border-radius: 4px;
+  height: 20px;
+  font-size: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item.left.first-visible-item {
+  padding-left: 0px !important;
+}
+
+a.action-label.codicon.codicon-toolbar-more {
+  display: none !important;
+}
+
+.quick-input-widget {
+  top: 30vh !important;
+  border-radius: 10px;
+  border: none;
+}
+
+.quick-input-widget * {
+  border: none;
+  border-radius: 5px;
+}
+
+.letterpress {
+  background-image: url("") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  width: auto !important;
+  height: 100% !important;
+  margin-bottom: 20% !important;
+  margin-top: 10% !important;
+}
+
+.editor-group-watermark {
+  max-height: 75vh !important;
+}
+
+.tab.tab-actions-right.sizing-fit.has-icon.active.selected.tab-border-top {
+  --tab-border-top-color: none !important;
+  border-radius: 5px !important;
+}
+
+.monaco-editor .scroll-decoration {
+  box-shadow: none !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label
+  .label-name,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .title-label
+  .label-name {
+    height: 20px;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+}
+
+.window-appicon {
+  display: none;
+}
+
+.notifications-toasts * {
+  border: none;
+}
+
+.composite-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.composite-bar-container .actions-container .action-item {
+  border: none;
+}
+
+.sidebar .composite .title-label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
