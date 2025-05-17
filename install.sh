@@ -11,8 +11,6 @@ mv ~/.config/nvim ~/.config/nvim.old
 mv ~/.config/polybar ~/.config/polybar.old
 mv ~/.config/ranger ~/.config/ranger.old
 mv ~/.config/rofi ~/.config/rofi.old
-mv ~/.config/starship.toml ~/.config/starship.toml.old
-mv ~/.config/Code ~/.config/Code.old
 
 cp -r .config/i3 ~/.config/i3
 cp -r .config/kitty ~/.config/kitty
@@ -21,9 +19,6 @@ cp -r .config/nvim ~/.config/nvim
 cp -r .config/polybar ~/.config/polybar
 cp -r .config/ranger ~/.config/ranger
 cp -r .config/rofi ~/.config/rofi
-cp .config/starship.conf ~/.config/starship.conf
-
-cp -r .config/Code ~/.config/
 
 mv ~/.tmux ~/.tmux.old
 cp .tmux ~/
