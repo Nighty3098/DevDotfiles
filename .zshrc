@@ -4,8 +4,8 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-# ZSH_THEME="apple"
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="apple"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 plugins=(git
@@ -39,7 +39,9 @@ alias gp="git push"
 alias c="clear"
 alias e="exit"
 
-eval "$(starship init zsh)"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+mfetch
+
+# eval "$(starship init zsh)"

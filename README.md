@@ -4,12 +4,8 @@
     <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
     <br><br>
-    <a href="https://discord.gg/6xEc5WFK"><img src="https://img.shields.io/discord/1238858182403559505.svg?label=Discord&logo=Discord&style=for-the-badge&color=f5a7a0&logoColor=FFFFFF&labelColor=1c1c29" /></a>
-    <br><br>
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&color=eed49f" />
-    <br><br>
-    <a href="https://github.com/Nighty3098/nFetch"><kbd> Custom system fetch </kbd></a>  
-    <a href="https://github.com/Nighty3098/nvim"><kbd> Neovim config </kbd></a>
+    <a href="https://github.com/Nighty3098/nFetch"><kbd><br /> Custom system fetch <br /></kbd></a>  
+    <a href="https://github.com/Nighty3098/nvim"><kbd><br /> Neovim config <br /></kbd></a>
     <br><br>
 </div>
 
@@ -57,7 +53,7 @@ bash install.sh
 
 ## 🔗 Links and Resources
 
-- **Custom System Fetch**: [nFetch](https://github.com/Nighty3098/nFetch)
+- **Custom System Fetch**: [mFetch](https://github.com/Nighty3098/mFetch)
 - **Neovim Config**: [nvim](https://github.com/Nighty3098/nvim)
 - **Discord Community**: [Join us!](https://discord.gg/6xEc5WFK)
 
@@ -65,6 +61,7 @@ bash install.sh
 
 <div align="center">
     <img src="images/Pasted image.png" width="90%"/>
+    <br /><br /><br />
     <img src="images/Pasted image (2).png" width="90%"/>
 </div>
 

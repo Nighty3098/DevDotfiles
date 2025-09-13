@@ -1,0 +1,367 @@
+{
+  // Настройки редактора
+  "editor.quickSuggestions": {
+    "comments": true,
+    "strings": true,
+    "other": true
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.autoIndent": "full",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.colorDecorators": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.folding": false,
+  "editor.foldingStrategy": "auto",
+  "editor.fontFamily": "Iosevka Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.5,
+  "editor.lineNumbers": "on",
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelScrollSensitivity": 4,
+  "editor.parameterHints.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.horizontalScrollbarSize": 5,
+  "editor.selectionHighlight": false,
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "inline",
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.hover.enabled": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.stickyScroll.enabled": false,
+  "editor.suggestFontSize": 14,
+  "editor.suggestLineHeight": 27,
+  "editor.glyphMargin": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollbar.verticalScrollbarSize": 5,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.showFoldingControls": "never",
+
+  // Настройки интерфейса
+  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.editor.showIcons": true,
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.tips.enabled": false,
+  "workbench.tree.indent": 10,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.colorCustomizations": {
+    "inlineparameters.annotationBackground": "#282A3600",
+    "inlineparameters.annotationForeground": "#7b82af",
+    "scrollbar.shadow": "#24292e00"
+  },
+
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.localHistory.maxFileSize": 1000,
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.settings.applyToAllProfiles": [],
+
+  "problems.decorations.enabled": false,
+  "editor.overviewRulerBorder": false,
+
+  // Настройки терминала
+  "terminal.integrated.fontFamily": "JetBrainsMono NF",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.tabs.enabled": true,
+
+  // Настройки Git
+  "git.enableCommitSigning": true,
+  "git.autofetch": true,
+  "git.decorations.enabled": false,
+
+  // Настройки поиска
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**debug": true,
+    "**/package-lock.json": true,
+    "**/.next": true,
+    "**/data": true
+  },
+
+  // Настройки файлов
+  "files.restoreUndoStack": false,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/**.moc": true,
+    "**/**.o": true,
+    "**/moc_**.cpp": true,
+    "**/moc_**.h": true,
+    "**/qrc_**.cpp": true,
+    "**/**.pyc": true
+  },
+
+  // Настройки отладки
+  "debug.toolBarLocation": "floating",
+  "debug.enableStatusBarColor": true,
+  "debug.console.fontFamily": "JetBrainsMono NF",
+  "debug.disassemblyView.showSourceCode": false,
+  "debug.console.fontSize": 14,
+  "debug.console.lineHeight": 20,
+
+  // Настройки SCM
+  "scm.diffDecorations": "none",
+  "scm.showIncomingChanges": "always",
+  "scm.showOutgoingChanges": "always",
+
+
+  // Настройки окна
+  "window.menuBarVisibility": "toggle",
+  "window.title": " ",
+  "window.dialogStyle": "custom",
+  "window.density.editorTabHeight": "default",
+  "window.zoomLevel": 0.5,
+  "window.commandCenter": false,
+  "window.nativeFullScreen": true,
+  "window.nativeTabs": false,
+
+  "editor.guides.indentation": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "One Dark italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "One Dark italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "errorLens.borderRadius": "12px",
+  "errorLens.fontWeight": "900",
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.replaceLinebreaksSymbol": "- ",
+  "errorLens.searchForProblemQuery": "https://google.com/?q=$message",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.enableCodeLens": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.layoutControl.enabled": false,
+  "errorLens.editorHoverPartsEnabled": {
+    "messageEnabled": true,
+    "buttonsEnabled": true,
+    "sourceCodeEnabled": true
+  },
+  "errorLens.fontFamily": "JetBrainsMono NF",
+  "errorLens.gutterIconSet": "squareRounded",
+  "errorLens.statusBarMessageTemplate": "$count",
+  "errorLens.margin": "0px",
+  "errorLens.severityText": [],
+  "errorLens.statusBarIconsAtZero": "hide",
+  "errorLens.respectUpstreamEnabled": {
+    "statusBar": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": ". --ext .ts --ext .tsx",
+  "errorLens.excludeBySource": [
+    "ts(1239)",
+    "eslint(@typescript-eslint/explicit-function-return-type)"
+  ],
+
+  "workbench.startupEditor": "none",
+  "editor.cursorBlinking": "phase",
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEnums": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.symbolPath": "off",
+
+  "vscode_custom_css.imports": [
+    "file:///home/nighty/.config/Code/User/custom.css",
+    "file:///home/nighty/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "markdown.preview.fontSize": 14,
+  "editor.fontSize": 14,
+  "explorer.excludeGitIgnore": true,
+  "workbench.productIconTheme": "bongocat",
+  "window.titleBarStyle": "native",
+  "notebook.output.fontFamily": "JetBrainsMono NF",
+  "terminal.integrated.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": true,
+  "explorer.confirmDragAndDrop": false,
+"animations.Install-Method": "Custom CSS and JS",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.codeLensEnabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "cursorcode.prompt": "Как можно оптимизировать код",
+  "projectManager.git.baseFolders": [
+    "~/Development/Git"
+  ],
+  "explorer.confirmDelete": false,
+  "workbench.statusBar.visible": true,
+  "github.copilot.advanced": {
+    "authProvider": "github-enterprise"
+  },
+  "github.copilot.advanced.authProvider": "github",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "apc.electron": {
+    "backgroundColor": "#00000000",
+    "frame": false,
+    "vibrancy": "fullscreen-ui",
+    "visualEffectState": "active",
+    "titleBarStyle": "hidden",
+    "trafficLightPosition": {
+      "x": 15,
+      "y": 14
+    }
+  },
+  "symbols.hidesExplorerArrows": false,
+  "explorer.compactFolders": false,
+  "explorer.openEditors.visible": 1,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.autoReveal": true,
+  "workbench.reduceMotion": "on",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.tree.enableStickyScroll": false,
+  "explorer.confirmPasteNative": false,
+  "deepseek.lang": "en",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "codium.codeCompletion.enable": false,
+  "codium.customInstructions.allMessages": "",
+  "codium.customInstructions.specificCommands": {},
+  "codium.editorButton": true,
+  "codium.codeCompletion.userInstructions": "",
+  "codium.rag.maxLocalSnippets": 5,
+  "codium.rag.maxRemoteSnippets": 5,
+  "codium.terminalAllowedCommands": [],
+  "codium.terminalBlockedCommands": [],
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "chat.mcp.serverSampling": {
+    "Global in Code: github": {
+      "allowedModels": []
+    }
+  },
+  "vscode-ollama.baseUrl": "http://127.0.0.1:11434",
+  "vscode-ollama.model": "Llama3:latest",
+  "vscode-ollama.maxTokens": 10000000000,
+  "vscode-ollama.keepAlive": "5 minutes",
+  "vscode-ollama.performanceMode": "Base (Default)",
+  "vscode-ollama.systemPrompt": "Given the following conversation, relevant context, and a follow up question, reply with an answer to the current question the user is asking. Return only your response to the question given the above information following the users instructions as needed.",
+  "inference.model": "codellama:70b-code-fp16",
+  "inference.endpoint": "127.0.0.1:11434",
+  "inference.custom.model": "LLaMA",
+  "inference.maxTokens": 9999999,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
+  },
+  "terminal.integrated.fontSize": 13,
+  "window.customTitleBarVisibility": "never",
+  "granite.localModelSize": "large",
+
+}
