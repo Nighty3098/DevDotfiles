@@ -26,9 +26,6 @@ cp .tmux ~/
 mv ~/scripts ~/scripts.old
 cp -r scripts ~/scripts
 
-mv picom_git picom
-cp -r picom ~/picom
-
 cp .p10k.zsh ~/.config/.p10k.zsh
 cp .tmux.conf ~/.tmux.conf
 cp .zshrc ~/.zshrc
