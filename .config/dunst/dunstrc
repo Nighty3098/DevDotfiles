@@ -1,5 +1,5 @@
 [global]
-    font = "Font Awesome 5 Free Regular 12, Maple Mono Italic 12"
+    font = "Font Awesome 5 Free Regular 10, Maple Mono Italic 10"
     allow_markup = yes
     markup = yes
     format = "<span foreground='#5bb1b4'><b>%s</b></span>\n\n%b"
@@ -22,7 +22,7 @@
     separator_color = "#3c4549"
     separator_width = 1
     startup_notification = false
-    corner_radius = 15
+    corner_radius = 20
     icon_corner_radius = 10
     frame_color = "#3c4549"
     frame_width = 1
@@ -41,11 +41,11 @@
 
 
 [urgency_low]
-    background = "#130e0c"
-    foreground = "#e1cdbe"
+    background = "#0c1a1c"
+    foreground = "#c2c5c6"
 [urgency_normal]
-    background = "#130e0c"
-    foreground = "#e1cdbe"
+    background = "#0c1a1c"
+    foreground = "#c2c5c6"
 [urgency_critical]
-    background = "#130e0c"
-    foreground = "#e1cdbe"
+    background = "#0c1a1c"
+    foreground = "#c2c5c6"

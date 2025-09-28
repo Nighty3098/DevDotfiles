@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/2b7370a0-9076-4e95-9576-0c3b5559d496" width="90%"/>
+    <img src="images/5.png" width="90%"/>
     <br><br>
     <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
@@ -60,9 +60,15 @@ bash install.sh
 ## 🖼️ Desktop Environment Preview
 
 <div align="center">
-    <img src="images/Pasted image.png" width="90%"/>
+    <img src="images/1.png" width="90%"/>
     <br /><br /><br />
-    <img src="images/Pasted image (2).png" width="90%"/>
+    <img src="images/2.png" width="90%"/>
+    <br /><br /><br />
+    <img src="images/3.png" width="90%"/>
+    <br /><br /><br />
+    <img src="images/4.png" width="90%"/>
+    <br /><br /><br />
+    <img src="images/5.png" width="90%"/>
 </div>
 
 ## 🛠️ Contributing

@@ -16,7 +16,7 @@ exec_always --no-startup-id picom
 #--animations
 exec --no-startup-id pulseaudio
 exec --no-startup-id cpupower frequency-set -g performance
-exec --no-startup-id clipman
+exec --no-startup-id copyq
 exec --no-startup-id wal -R
 exec --no-startup-id dunst
 exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 165 --dpi 220
@@ -155,9 +155,9 @@ mode "gaps" {
 bindsym $mod+r mode "resize"
 bindsym $mod+g mode "gaps"
 
-for_window [tiling] border pixel 0
+for_window [tiling] border pixel 2
 smart_borders on
-default_border pixel 0
+default_border pixel 2
 
 gaps inner 10
 gaps outer 10
@@ -167,7 +167,7 @@ set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused          $fg     $fg     $fg  $fg       $fg
 client.focused_inactive $bg     $bg     $fg  $bg       $bg
 client.unfocused        $bg     $bg     $fg  $bg       $bg
 client.urgent           $bg     $bg     $fg  $bg       $bg
