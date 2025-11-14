@@ -1,0 +1,111 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "FontAwesome 5", "JetBrainsMono NFP";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #141415;
+}
+
+#workspaces button {
+  padding: 0.3rem 1.5rem;
+  margin: 0.40rem 0.25rem;
+  border-radius: 6px;
+  background-color: #252530;
+  color: #cdcdcd;
+}
+
+#workspaces button:hover {
+  color: #606079;
+  background-color: #cdd6f4;
+}
+
+#workspaces button.active {
+  background-color: #606079;
+  color: #cdcdcd;
+}
+
+#workspaces button.urgent {
+  background-color: #606079;
+  color: #f38ba8;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris {
+  padding: 0.3rem 1.5rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #252530;
+}
+
+#mpris.playing {
+  color: #a6e3a1;
+}
+
+#mpris.paused {
+  color: #9399b2;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #585b70;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #8ba9c1;
+}
+
+#memory {
+  color: #7fa563;
+}
+
+#clock {
+  color: #bb9dbd;
+}
+
+#clock.simpleclock {
+  color: #bb9dbd;
+}
+
+#window {
+  color: #aeaed1;
+}
+
+#pulseaudio {
+  color: #6e94b2;
+}
+
+#pulseaudio.muted {
+  color: #f3be7c;
+}
+
+#custom-logo {
+  color: #7fa563;
+}
+
+#custom-power {
+  color: #d8647e;
+}
+
+tooltip {
+  background-color: #252530;
+  border: 2px solid #606079;
+}
