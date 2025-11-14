@@ -1,5 +1,6 @@
 <div align="center">
     <img src="images/5.png" width="90%"/>
+    <img src="images/hyprland_2.png" width="90%"/>
     <br><br>
     <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
     <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
@@ -15,16 +16,16 @@ Hello there! 👋 Welcome to my collection of **i3wm** dotfiles, designed for a 
 
 Here’s a breakdown of my current setup:
 
-- **Window Manager**: [i3wm](https://github.com/i3/i3) 🖼️
-- **Shell**: [zsh](https://wiki.archlinux.org/index.php/zsh) 🐚 powered by [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- **Window Manager**: [i3wm](https://github.com/i3/i3) and [Hyprland](https://github.com/hyprwm/Hyprland) 🖼️
+- **Shell**: [zsh](https://wiki.archlinux.org/index.php/zsh) 🐚 powered by [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) and [p10k](https://github.com/romkatv/powerlevel10k)
 - **Terminal**: [kitty](https://github.com/kovidgoyal/kitty) 😺
-- **Panel**: [polybar](https://github.com/polybar/polybar) 📊 with [Iosevka NF](https://github.com/be5invis/Iosevka) for icons
-- **Compositor**: [picom](https://github.com/chjj/compton) ✨
+- **Panel**: [polybar](https://github.com/polybar/polybar) and [waybar](https://github.com/Alexays/Waybar) 📊 with [Iosevka NF](https://github.com/be5invis/Iosevka) for icons
+- **Compositor**: [picom](https://github.com/chjj/compton) on i3wm ✨
 - **Notifications**: [dunst](https://wiki.archlinux.org/index.php/Dunst) 🔔
 - **File Manager**: [ranger](https://github.com/ranger/ranger) 📂
 - **Editor**: [neovim](https://github.com/Nighty3098/nvim) ✍️
-- **Application Launcher**: [rofi](https://github.com/davatorium/rofi) 🚀
-- **System Fetch**: [nfetch](https://github.com/Nighty3098/nFetch) 📈
+- **Application Launcher**: [rofi](https://github.com/davatorium/rofi) and [wofi](https://github.com/SimplyCEO/wofi) 🚀
+- **System Fetch**: [mFetch](https://github.com/Nighty3098/mFetch) 📈
 
 
 ## 📥 Installation
@@ -60,6 +61,12 @@ bash install.sh
 ## 🖼️ Desktop Environment Preview
 
 <div align="center">
+    <h3>HYPRLAND</h3>
+    <img src="images/hyprland.png" width="90%"/>
+    <br /><br /><br />
+    <img src="images/hyprland_2.png" width="90%"/>
+    <br /><br /><br />
+    <h3>I3-WM</h3>
     <img src="images/1.png" width="90%"/>
     <br /><br /><br />
     <img src="images/2.png" width="90%"/>
