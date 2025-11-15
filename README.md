@@ -1,12 +1,8 @@
 <div align="center">
-    <img src="images/5.png" width="90%"/>
-    <img src="images/hyprland_2.png" width="90%"/>
+    <img src="header.png" width="90%"/>
     <br><br>
-    <img src="https://img.shields.io/github/issues/Nighty3098/DevDotfiles?style=for-the-badge&color=dbb6ed&logoColor=85e185&labelColor=1c1c29" />
-    <img src="https://img.shields.io/github/stars/Nighty3098/DevDotfiles?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=1c1c29"/>
-    <br><br>
-    <a href="https://github.com/Nighty3098/nFetch"><kbd><br /> Custom system fetch <br /></kbd></a>  
-    <a href="https://github.com/Nighty3098/nvim"><kbd><br /> Neovim config <br /></kbd></a>
+    <a href="https://github.com/Nighty3098/nFetch"><kbd> Custom system fetch </kbd></a>  
+    <a href="https://github.com/Nighty3098/nvim"><kbd> Neovim config </kbd></a>
     <br><br>
 </div>
 
