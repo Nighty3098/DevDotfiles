@@ -4,35 +4,36 @@
   font-family: "FontAwesome 5", "JetBrainsMono NFP";
   font-size: 11px;
   font-weight: 600;
+  color: #131d14;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #141415;
+  background-color: #131d14;
 }
 
 #workspaces button {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #252530;
-  color: #cdcdcd;
+  background-color: #A4612C;
+  color: #e1e0b8;
 }
 
 #workspaces button:hover {
-  color: #606079;
-  background-color: #cdd6f4;
+  color: #A4AF18;
+  background-color: #B1AD65;
 }
 
 #workspaces button.active {
-  background-color: #606079;
-  color: #cdcdcd;
+  background-color: #B1AD65;
+  color: #e1e0b8;
 }
 
 #workspaces button.urgent {
-  background-color: #606079;
-  color: #f38ba8;
+  background-color: #B1AD65;
+  color: #A4612C;
 }
 
 #clock,
@@ -46,24 +47,34 @@ window#waybar {
 #memory,
 #window,
 #language,
+#network,
+#battery,
 #mpris {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #252530;
+  background-color: #A4612C;
 }
 
 #mpris.playing {
-  color: #a6e3a1;
+  background-color: #C8752F;
 }
 
 #mpris.paused {
-  color: #9399b2;
+  background-color: #e1e0b8;
+}
+
+#network {
+  background-color: #e1e0b8;
+}
+
+#battery {
+  background-color: #e1e0b8;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #585b70;
+  background-color: #B1AD65;
 }
 
 window#waybar.empty #window {
@@ -71,46 +82,46 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  color: #8ba9c1;
+  background-color: #A4AF18;
 }
 
 #memory {
-  color: #7fa563;
+  background-color: #C8752F;
 }
 
 #language {
-  color: #bb9dbd;
+  background-color: #F4A22B;
 }
 
 #clock {
-  color: #bb9dbd;
+  background-color: #F4A22B;
 }
 
 #clock.simpleclock {
-  color: #bb9dbd;
+  background-color: #F4A22B;
 }
 
 #window {
-  color: #aeaed1;
+  background-color: #B1AD65;
 }
 
 #pulseaudio {
-  color: #6e94b2;
+  background-color: #738939;
 }
 
 #pulseaudio.muted {
-  color: #f3be7c;
+  background-color: #738939;
 }
 
 #custom-logo {
-  color: #7fa563;
+  background-color: #C8752F;
 }
 
 #custom-power {
-  color: #d8647e;
+  background-color: #A4612C;
 }
 
 tooltip {
-  background-color: #252530;
-  border: 2px solid #606079;
+  background-color: #A4612C;
+  border: 2px solid #B1AD65;
 }

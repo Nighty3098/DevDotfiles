@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 30,
+  "height": 35,
   "spacing": 1,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -10,20 +10,46 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["mpris"],
   "modules-right": [
+    "network",
     "cpu",
     "memory",
     "pulseaudio",
     "hyprland/language",
+    "tray",
+    "battery",
     "clock",
     "clock#simpleclock",
-    "tray",
-    "custom/power",
+    "custom/power"
   ],
+   "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-full": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "interval": 2
+  }, 
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": " No connection",
+    "tooltip-format": " {ifname} via {gwaddr}",
+    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": " {ifname}",
+    "tooltip-format-disconnected": " Disconnected",
+    "on-click": "nm-connection-editor"
+  },
   "hyprland/language": {
     "format": " {}",
     "format-en": "US",
     "format-ru": "RU",
-    "on-click": "hyprctl switchxkblayout hfd.cn-dexp-tanto-rgb next",
+    "on-click": "hyprctl switchxkblayout hfd.cn-dexp-tanto-rgb next"
   },
   "custom/spotify": {
     "format": "  {}",
@@ -31,7 +57,7 @@
     "on-click": "playerctl -p spotify play-pause",
     "on-click-right": "spotifatius toggle-liked",
     "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor",
+    "exec": "spotifatius monitor"
   },
   "mpris": {
     "player": "spotify",
@@ -39,29 +65,29 @@
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
     "status-icons": {
-      "paused": "",
+      "paused": ""
     },
     "player-icons": {
-      "default": "",
-    },
+      "default": ""
+    }
   },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
     "all-outputs": true,
     "disable-scroll": false,
-    "active-only": false,
+    "active-only": false
   },
   "hyprland/window": {
-    "format": "{title}",
+    "format": "{title}"
   },
   "tray": {
     "show-passive-items": true,
-    "spacing": 10,
+    "spacing": 10
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}",
+    "format": " {:%H:%M}"
   },
   "clock": {
     "format": " {:L%a %d %b}",
@@ -71,38 +97,39 @@
         "months": "<span color='#d8647e'><b>{}</b></span>",
         "today": "<span color='#7fa563' weight='700'><u>{}</u></span>",
         "weekdays": "<span color='#6e94b2'><b>{}</b></span>",
-        "weeks": "<span color='#bb9dbd'><b>W{}</b></span>",
+        "weeks": "<span color='#bb9dbd'><b>W{}</b></span>"
       },
       "mode": "month",
       "mode-mon-col": 1,
-      "on-scroll": 1,
+      "on-scroll": 1
     },
-    "tooltip-format": "<span color='#cdcdcd' font='Lexend 12'><tt><small>{calendar}</small></tt></span>",
+    "tooltip-format": "<span color='#cdcdcd' font='Lexend 12'><tt><small>{calendar}</small></tt></span>"
   },
   "cpu": {
     "format": " {usage}%",
     "tooltip": true,
-    "interval": 1,
+    "interval": 1
   },
   "memory": {
     "format": " {used:0.1f}GB",
+    "interval": 1,
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "  muted",
     "format-icons": {
       "headphone": "",
-      "default": [" ", " ", " "],
+      "default": [" ", " ", " "]
     },
-    "on-click": "pavucontrol",
+    "on-click": "pavucontrol"
   },
   "custom/sep": {
     "format": "|",
-    "tooltip": false,
+    "tooltip": false
   },
   "custom/power": {
     "tooltip": false,
-    "on-click": "systemctl logout",
-    "format": " ⏻ ",
-  },
+    "on-click": "bash ~/scripts/rofi_power_menu.sh",
+    "format": " ⏻ "
+  }
 }
