@@ -21,11 +21,9 @@ case $option in
     systemctl poweroff
     ;;
 "Suspend system")
-    $($USE_LOCKER) && "$LOCKER"
     systemctl suspend
     ;;
 "Hibernate system")
-    $($USE_LOCKER) && "$LOCKER"
     systemctl hibernate
     ;;
 "Lock system")

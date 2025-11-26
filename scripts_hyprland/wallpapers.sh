@@ -22,7 +22,6 @@ if [[ -n "$choice" ]]; then
     # bash ~/scripts/waybar_colors.sh
     # pkill waybar && waybar
 
-    bash ~/scripts/wofi_colors.sh
     bash ~/scripts/waybar_colors.sh
     bash ~/scripts/restart_waybar.sh
 
