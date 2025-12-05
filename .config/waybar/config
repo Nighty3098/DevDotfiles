@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 35,
+  "height": 30,
   "spacing": 1,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -15,11 +15,10 @@
     "memory",
     "pulseaudio",
     "hyprland/language",
-    "tray",
     "battery",
+    "tray",
     "clock",
     "clock#simpleclock",
-    "custom/power"
   ],
    "battery": {
     "format": "{icon} {capacity}%",
@@ -43,7 +42,8 @@
     "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
     "tooltip-format-ethernet": " {ifname}",
     "tooltip-format-disconnected": " Disconnected",
-    "on-click": "nm-connection-editor"
+    "on-click": "bash ~/scripts/wifi.sh",
+    "interval": 1
   },
   "hyprland/language": {
     "format": " {}",

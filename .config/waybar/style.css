@@ -4,36 +4,36 @@
   font-family: "FontAwesome 5", "JetBrainsMono NFP";
   font-size: 11px;
   font-weight: 600;
-  color: #131d14;
+  color: #0D1118;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #131d14;
+  background-color: #0D1118;
 }
 
 #workspaces button {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #A4612C;
-  color: #e1e0b8;
+  background-color: #5C626D;
+  color: #c6c8cc;
 }
 
 #workspaces button:hover {
-  color: #A4AF18;
-  background-color: #B1AD65;
+  color: #7D828C;
+  background-color: #989CA4;
 }
 
 #workspaces button.active {
-  background-color: #B1AD65;
-  color: #e1e0b8;
+  background-color: #989CA4;
+  color: #c6c8cc;
 }
 
 #workspaces button.urgent {
-  background-color: #B1AD65;
-  color: #A4612C;
+  background-color: #989CA4;
+  color: #5C626D;
 }
 
 #clock,
@@ -53,28 +53,28 @@ window#waybar {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #A4612C;
+  background-color: #5C626D;
 }
 
 #mpris.playing {
-  background-color: #C8752F;
+  background-color: #676C77;
 }
 
 #mpris.paused {
-  background-color: #e1e0b8;
+  background-color: #c6c8cc;
 }
 
 #network {
-  background-color: #e1e0b8;
+  background-color: #c6c8cc;
 }
 
 #battery {
-  background-color: #e1e0b8;
+  background-color: #c6c8cc;
 }
 
 #custom-sep {
   padding: 0px;
-  background-color: #B1AD65;
+  background-color: #989CA4;
 }
 
 window#waybar.empty #window {
@@ -82,46 +82,46 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  background-color: #A4AF18;
+  background-color: #7D828C;
 }
 
 #memory {
-  background-color: #C8752F;
+  background-color: #676C77;
 }
 
 #language {
-  background-color: #F4A22B;
+  background-color: #878C96;
 }
 
 #clock {
-  background-color: #F4A22B;
+  background-color: #878C96;
 }
 
 #clock.simpleclock {
-  background-color: #F4A22B;
+  background-color: #878C96;
 }
 
 #window {
-  background-color: #B1AD65;
+  background-color: #989CA4;
 }
 
 #pulseaudio {
-  background-color: #738939;
+  background-color: #757A85;
 }
 
 #pulseaudio.muted {
-  background-color: #738939;
+  background-color: #757A85;
 }
 
 #custom-logo {
-  background-color: #C8752F;
+  background-color: #676C77;
 }
 
 #custom-power {
-  background-color: #A4612C;
+  background-color: #5C626D;
 }
 
 tooltip {
-  background-color: #A4612C;
-  border: 2px solid #B1AD65;
+  background-color: #5C626D;
+  border: 2px solid #989CA4;
 }
