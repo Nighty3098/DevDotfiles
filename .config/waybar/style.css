@@ -1,39 +1,39 @@
 * {
   min-height: 0;
   min-width: 0;
-  font-family: "FontAwesome 5", "JetBrainsMono NFP";
-  font-size: 11px;
+  font-family: "FontAwesome 5", "JetBrainsMono";
+  font-size: 10px;
   font-weight: 600;
-  color: #0D1118;
+  color: #01091a;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #0D1118;
+  background-color: #01091a;
 }
 
 #workspaces button {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #5C626D;
-  color: #c6c8cc;
+  background-color: #0d4a94;
+  color: #abbecd;
 }
 
 #workspaces button:hover {
-  color: #7D828C;
-  background-color: #989CA4;
+  color: #4e7399;
+  background-color: #369fa8;
 }
 
 #workspaces button.active {
-  background-color: #989CA4;
-  color: #c6c8cc;
+  background-color: #369fa8;
+  color: #abbecd;
 }
 
 #workspaces button.urgent {
-  background-color: #989CA4;
-  color: #5C626D;
+  background-color: #369fa8;
+  color: #0d4a94;
 }
 
 #clock,
@@ -53,28 +53,28 @@ window#waybar {
   padding: 0.3rem 1rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #5C626D;
+  background-color: #0d4a94;
 }
 
 #mpris.playing {
-  background-color: #676C77;
+  background-color: #135da6;
 }
 
 #mpris.paused {
-  background-color: #c6c8cc;
+  background-color: #abbecd;
 }
 
 #network {
-  background-color: #c6c8cc;
+  background-color: #abbecd;
 }
 
 #battery {
-  background-color: #c6c8cc;
+  background-color: #abbecd;
 }
 
 #custom-sep {
   padding: 0px;
-  background-color: #989CA4;
+  background-color: #369fa8;
 }
 
 window#waybar.empty #window {
@@ -82,46 +82,46 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  background-color: #7D828C;
+  background-color: #4e7399;
 }
 
 #memory {
-  background-color: #676C77;
+  background-color: #135da6;
 }
 
 #language {
-  background-color: #878C96;
+  background-color: #2a8ead;
 }
 
 #clock {
-  background-color: #878C96;
+  background-color: #2a8ead;
 }
 
 #clock.simpleclock {
-  background-color: #878C96;
+  background-color: #2a8ead;
 }
 
 #window {
-  background-color: #989CA4;
+  background-color: #369fa8;
 }
 
 #pulseaudio {
-  background-color: #757A85;
+  background-color: #196eae;
 }
 
 #pulseaudio.muted {
-  background-color: #757A85;
+  background-color: #196eae;
 }
 
 #custom-logo {
-  background-color: #676C77;
+  background-color: #135da6;
 }
 
 #custom-power {
-  background-color: #5C626D;
+  background-color: #0d4a94;
 }
 
 tooltip {
-  background-color: #5C626D;
-  border: 2px solid #989CA4;
+  background-color: #0d4a94;
+  border: 2px solid #369fa8;
 }
