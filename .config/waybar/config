@@ -23,9 +23,9 @@
    "battery": {
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-full": " {capacity}%",
+    "format-charging": "CH {capacity}%",
+    "format-plugged": "PL {capacity}%",
+    "format-full": "FULL {capacity}%",
     "format-alt": "{icon} {time}",
     "states": {
       "warning": 30,
@@ -35,18 +35,18 @@
   }, 
   "network": {
     "format": "{ifname}",
-    "format-wifi": "  {essid} ({signalStrength}%)",
-    "format-ethernet": " {ifname}",
-    "format-disconnected": " No connection",
-    "tooltip-format": " {ifname} via {gwaddr}",
-    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": " {ifname}",
-    "tooltip-format-disconnected": " Disconnected",
+    "format-wifi": "WIFI {essid} ({signalStrength}%)",
+    "format-ethernet": "ETH {ifname}",
+    "format-disconnected": "NO CONNECTION",
+    "tooltip-format": "ETH {ifname} via {gwaddr}",
+    "tooltip-format-wifi": "WIFI {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "ETH {ifname}",
+    "tooltip-format-disconnected": "DISCONNECTED",
     "on-click": "bash ~/scripts/wifi.sh",
     "interval": 1
   },
   "hyprland/language": {
-    "format": " {}",
+    "format": "{}",
     "format-en": "US",
     "format-ru": "RU",
     "on-click": "hyprctl switchxkblayout hfd.cn-dexp-tanto-rgb next"
@@ -86,10 +86,10 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}"
+    "format": "{:%H:%M}"
   },
   "clock": {
-    "format": " {:L%a %d %b}",
+    "format": "{:L%a %d %b}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
@@ -105,17 +105,17 @@
     "tooltip-format": "<span color='#cdcdcd' font='Lexend 12'><tt><small>{calendar}</small></tt></span>"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "CPU {usage}%",
     "tooltip": true,
     "interval": 1
   },
   "memory": {
-    "format": " {used:0.1f}GB",
+    "format": "RAM {used:0.1f}GB",
     "interval": 1,
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "  muted",
+    "format": "VOL {volume}%",
+    "format-muted": "VOL muted",
     "format-icons": {
       "headphone": "",
       "default": [" ", " ", " "]
