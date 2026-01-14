@@ -1,11 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-all_sinks=$(pactl list short sinks | cut -f 2)
+sinks=$(pactl list short sinks)
 
-default_sink=$(pactl info | grep 'Default Sink' | cut -d : -f 2)
+choices=$(echo "$sinks" | awk '{print $2}')
 
-active_sink=$(echo "$all_sinks" | grep -n $default_sink | cut -d : -f 1)
+selected_sink=$(echo "$choices" | wofi --dmenu --prompt="Select Audio Output:")
 
-selected_sink=$(echo "$all_sinks" | rofi -dmenu -i -a $(($active_sink - 1)) -p 'Select a device: ')
+if [ -n "$selected_sink" ]; then
+  pactl set-default-sink "$selected_sink"
 
-pactl set-default-sink $selected_sink
+  pactl list short sink-inputs | awk '{print $1}' | while read -r stream; do
+    pactl move-sink-input "$stream" "$selected_sink"
+  done
+fi
