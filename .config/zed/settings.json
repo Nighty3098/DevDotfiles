@@ -1,0 +1,118 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run zed: open default settings from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Zed (Default)",
+  "disable_ai": false,
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "ollama",
+      "model": "gpt-oss:20b",
+    },
+    "model_parameters": [],
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_icon": true,
+  },
+  "terminal": {
+    "font_size": 12.0,
+    "font_family": "JetBrains Mono NL",
+    "dock": "bottom",
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+    "line_height": {
+      "custom": 1.8,
+    },
+  },
+  "project_panel": {
+    "git_status": true,
+    "auto_fold_dirs": false,
+    "dock": "left",
+    "file_icons": true,
+  },
+  "outline_panel": {
+    "git_status": true,
+  },
+  "base_keymap": "VSCode",
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "status_bar": {
+    "experimental.show": true,
+  },
+  "tab_bar": {
+    "show": true,
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+  },
+  "show_signature_help_after_edits": false,
+  "auto_signature_help": false,
+  "search": {
+    "include_ignored": false,
+  },
+  "scroll_sensitivity": 4.0,
+  "gutter": {
+    "line_numbers": true,
+    "folds": true,
+    "runnables": true,
+    "breakpoints": true,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false,
+    },
+  },
+  "hover_popover_enabled": true,
+  "selection_highlight": false,
+  "cursor_blink": true,
+  "use_system_window_tabs": false,
+  "buffer_font_family": "JetBrains Mono NL",
+  "show_edit_predictions": true,
+  "ensure_final_newline_on_save": true,
+  "indent_guides": {
+    "enabled": false,
+  },
+  "soft_wrap": "none",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light Soft",
+    "dark": "Github Dark High Contrast",
+  },
+  "active_pane_modifiers": {
+    "border_size": 0.0,
+    "inactive_opacity": 1,
+  },
+  "vim_mode": false,
+  "bottom_dock_layout": "contained",
+  "autosave": "on_focus_change",
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": false,
+    "breadcrumbs": false,
+    "selections_menu": false,
+    "quick_actions": false,
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "padding": 4,
+    },
+  },
+  "multi_cursor_modifier": "alt",
+}
