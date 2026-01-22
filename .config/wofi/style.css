@@ -12,26 +12,29 @@
   border: none;
   box-shadow: none;
   outline: none;
+  border-radius: 20px;
 }
 
 window {
   font-size: 14px;
   font-family: "Iosevka";
-  background-color: @background;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 0px;
-  opacity: 1;
+  transparency: "real";
 }
 
 #outer-box {
   margin: 10px 10px 20px 10px;
   background-color: @background;
-  opacity: 0.9;
+  opacity: 1;
+  border-radius: 20px;
 }
 
 #inner-box {
   margin: 10px;
   background-color: @background;
   opacity: 0.9;
+  border-radius: 20px;
 }
 
 #entry {
