@@ -1,33 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-UPTIME=$(uptime -p)
-OPTIONS=("UPTIME: ${UPTIME}" "Reboot system" "Power-off system" "Suspend system" "Hibernate system" "Lock system" "Exit window manager")
+# Опции powermenu
+options="Lock\nSuspend\nReboot\nPoweroff\nExit"
 
-LAUNCHER="wofi -dmenu -i -p POWER "
-USE_LOCKER="true"
-LOCKER="hyprlock"
+# Выбор пользователя
+selected=$(echo -e "$options" | wofi --dmenu --prompt "Power" --insensitive -W 500 -H 500)
 
-option=$()
-
-option=$(printf "%s\n" "${OPTIONS[@]}" | $LAUNCHER)
-case $option in
-"Exit window manager")
-    hyprctl dispatch exit
-    ;;
-"Reboot system")
-    systemctl reboot
-    ;;
-"Power-off system")
-    systemctl poweroff
-    ;;
-"Suspend system")
-    systemctl suspend
-    ;;
-"Hibernate system")
-    systemctl hibernate
-    ;;
-"Lock system")
-    $LOCKER
-    ;;
-*) ;;
+case "$selected" in
+"Lock") hyprlock ;; # или swaylock
+"Suspend") systemctl suspend ;;
+"Reboot") systemctl reboot ;;
+"Poweroff") systemctl poweroff ;;
+"Exit") hyprctl dispatch exit ;; # или killall Hyprland
 esac
