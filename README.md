@@ -78,13 +78,13 @@ bash install.sh
 
 ## 🖼️ Desktop Environment Preview
 
-[](images/1.png)
-[](images/2.png)
-[](images/3.png)
-[](images/4.png)
-[](images/5.png)
-[](images/hyprland_2.png)
-[](images/hyprland.png)
+<img alt="1" src="https://github.com/user-attachments/assets/8665fdc2-3842-47f5-a133-cb16cd6270d3" />
+<img alt="2" src="https://github.com/user-attachments/assets/8a09e54f-f18c-4781-83e0-5e10ddd85855" />
+<img alt="3" src="https://github.com/user-attachments/assets/103eaf1d-ebf3-4dd6-8bc3-9e4ee9156f4d" />
+<img alt="4" src="https://github.com/user-attachments/assets/45cb11b5-4eb9-4eed-a198-de744663b57b" />
+<img alt="5" src="https://github.com/user-attachments/assets/8644079b-c992-40b0-aa8f-d53bc3ff98a3" />
+<img alt="hyprland" src="https://github.com/user-attachments/assets/f951e77b-22fb-4528-9efb-c4c2fc95dbab" />
+<img alt="hyprland_2" src="https://github.com/user-attachments/assets/814b35ff-6812-485d-a545-2806d2fb732b" />
 
 ## 🛠️ Contributing
 
