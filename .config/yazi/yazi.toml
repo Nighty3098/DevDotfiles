@@ -1,0 +1,37 @@
+[manager]
+ratio          = [ 1, 3, 4 ] 
+sort_by        = "natural"
+sort_sensitive = false   
+sort_reverse   = false
+show_hidden    = true   
+
+[preview]
+max_width  = 1200
+max_height = 900
+
+[opener]
+edit = [
+    { run = 'nvim "%s"', block = true, for = "unix" }
+]
+play = [
+    { run = 'mpv "%s"', orphan = true, for = "unix" }
+]
+view = [
+    { run = 'xdg-open "%s"', desc = "Open", for = "unix" }
+]
+
+[open]
+rules = [
+    { url = "*.txt", use = "edit" },
+    { url = "*.md",  use = "edit" },
+    { url = "*.toml", use = "edit" },
+    
+    { mime = "video/*", use = "play" },
+    { mime = "audio/*", use = "play" },
+    
+    { mime = "image/*", use = "view" },
+    { url = "*.pdf",  use = "view" },
+
+    { url = "*", use = "view" }
+]
+

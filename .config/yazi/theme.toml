@@ -1,0 +1,18 @@
+[mgr]
+border_symbol = " "
+border_style  = { fg = "reset", bg = "reset" }
+
+[status]
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "cyan", bg = "reset", bold = true }
+normal_alt  = { fg = "white", bg = "reset" }
+
+select_main = { fg = "magenta", bg = "reset", bold = true }
+select_alt  = { fg = "white", bg = "reset" }
+
+unset_main  = { fg = "yellow", bg = "reset", bold = true }
+unset_alt   = { fg = "white", bg = "reset" }
+
