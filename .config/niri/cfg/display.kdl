@@ -4,7 +4,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
 output "HDMI-A-1" {
-    mode "2560x1440@60" // Set resolution and refresh rate
+    mode "2560x1440@144" // Set resolution and refresh rate
     scale 1 // No scaling (use 2 for HiDPI)
     position x=-320 y=0 // Centered above eDP-1 ((2560-1920)/2=-320)
     hot-corners {

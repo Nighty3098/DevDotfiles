@@ -1,5 +1,5 @@
     window-rule {
-        geometry-corner-radius 0 // Set every window radius to 20
+        geometry-corner-radius 15 // Set every window radius to 20
         clip-to-geometry true
     }
 
@@ -38,6 +38,6 @@
         match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
         background-effect {
           xray false
-          // blur false
+          blur false
         }
     }

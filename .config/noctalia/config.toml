@@ -1,2 +1,7 @@
 [shell]
 polkit_agent = true
+[bar.default]
+position = "left"
+
+
+
