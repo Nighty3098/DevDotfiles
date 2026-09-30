@@ -44,6 +44,10 @@ bash install.sh
 
 ## 🖼️ Desktop Environment Preview
 
+<img alt="1" src="./images/term.png" />
+<br />
+<img alt="1" src="./images/term_2.png" />
+
 <img alt="1" src="https://github.com/user-attachments/assets/8665fdc2-3842-47f5-a133-cb16cd6270d3" />
 <img alt="2" src="https://github.com/user-attachments/assets/8a09e54f-f18c-4781-83e0-5e10ddd85855" />
 <img alt="3" src="https://github.com/user-attachments/assets/103eaf1d-ebf3-4dd6-8bc3-9e4ee9156f4d" />
